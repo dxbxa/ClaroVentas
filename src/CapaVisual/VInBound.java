@@ -404,7 +404,7 @@ public class VInBound extends javax.swing.JFrame {
             llena_Basics();
             
             if(jComboBox4.getSelectedItem().toString().equals("01 - PreVenta")){
-                GL_Principal.VVenta(GL_Principal, 3,jTextField2.getText(),jTextField3.getText(),jTextField1.getText(),0,Integer.parseInt(jTextField4.getText()),"");
+                GL_Principal.VVentaProducto(GL_Principal, 3,jTextField2.getText(),jTextField3.getText(),jTextField1.getText(),0,Integer.parseInt(jTextField4.getText()),"");
             }
             
             
