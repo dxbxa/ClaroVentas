@@ -20,6 +20,7 @@ public class GestorLogico {
     VOutBound Ventana_Outbound;
     VAdministrar Ventana_VAdministrar;
     VVenta Ventana_Venta;
+    VVentaProducto Ventana_Venta_Producto;
     ConexionBD objCnx=new ConexionBD();
     public String [] Usuario;
     
@@ -165,6 +166,21 @@ public class GestorLogico {
     public void VVenta(GestorLogico pGLPrincipal, int pPadre,String pcedula,String pnombre,String ptelefono,int pproc ,int renta,String pBase){
         Ventana_Venta = new VVenta(pGLPrincipal,pPadre, pcedula, pnombre, ptelefono, pproc , renta, pBase);
         Ventana_Venta.setVisible(true);
+        switch (pPadre) {
+            case 1:  Ventana_Login.setVisible(false);
+                     break;
+            case 2:  Ventana_Outbound.setVisible(false);
+                     break;
+            case 3:  Ventana_Inbound.setVisible(false);
+                     break;
+        }
+        
+        
+        
+    }
+    public void VVentaProducto(GestorLogico pGLPrincipal, int pPadre,String pcedula,String pnombre,String ptelefono,int pproc ,int renta,String pBase){
+        Ventana_Venta_Producto = new VVentaProducto(pGLPrincipal,pPadre);
+        Ventana_Venta_Producto.setVisible(true);
         switch (pPadre) {
             case 1:  Ventana_Login.setVisible(false);
                      break;
