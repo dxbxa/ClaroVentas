@@ -8,6 +8,7 @@ package CapaLogica;
 
 import CapaVisual.*;
 import CapaBD.ConexionBD;
+import java.util.Date;
 
 /**
  *
@@ -21,8 +22,21 @@ public class GestorLogico {
     VAdministrar Ventana_VAdministrar;
     VVenta Ventana_Venta;
     VVentaProducto Ventana_Venta_Producto;
+    VVentaDTH Ventana_DTH;
+    VVentaMovil Ventana_Movil;
+    VentaGeneral ventaGeneral;
+    VentaDTH ventaDTH;
+    VentaMovil ventaMovil;
     ConexionBD objCnx=new ConexionBD();
     public String [] Usuario;
+
+    public String[] getUsuario() {
+        return Usuario;
+    }
+
+    public void setUsuario(String[] Usuario) {
+        this.Usuario = Usuario;
+    }
     
     
     public static void main(String[] args) {
@@ -31,6 +45,19 @@ public class GestorLogico {
         GL_Principal.Inicio(GL_Principal);
         
     }
+    
+    public VentaGeneral VentaGene(String procencia, String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia){
+        return ventaGeneral = new VentaGeneral(procencia, NombreCliente, Cedula, fechaVencCedula, Asesor, fechaNacimiento, estadoCivil, telMovil, telFijo, telTrabajo, provincia, canton, distrito, direccionCLiente, cantonEntrega, direccionEntrega, montoOrden, referenciaLaboral, telReferenciaLaboral, parentescoLaboral, nomRefFamiliar, telRefFamiliar, parentescoFamiliar, cantonRefFamiliar, nomRefPersonal, telRefPersonal, parentescoRefPersonal, cantonRefPersonal, procedenciaVenta, requisitosPoliticas, producto, fechaEntrega, horarioEntrega, comentariosVenta, regalia);
+    }
+    
+    public VentaDTH VentaDTH(String numeroBurro, String anticipo, String dondeFirmaInstala, String tipoProducto, double rentaPagar, String adicionales, String esquemaContratacionA, String esquemaContratacionB, String esquemaContratacionC){
+        return ventaDTH = new VentaDTH(numeroBurro, anticipo, dondeFirmaInstala, tipoProducto, rentaPagar, adicionales, esquemaContratacionA, esquemaContratacionB, esquemaContratacionC);
+    }
+    
+    public VentaMovil VentaMovil(String NomEmpresaTrab, String distritoTrabaja, String direccionTrabaja, double montoOrdenPatrol, String modeloTelefono, String tipoSim, String planPropuesto, String paqueteMinutos, String paqueteSms, String paqueteDatos, boolean clienteExiste, String segmentacion, double montoSubsidio, double rentaAnterior, double rentaActual, String formaPago, String sinFronteras, String informacionTarjeta, String tipoVenta){
+        return ventaMovil = new VentaMovil(NomEmpresaTrab, distritoTrabaja, direccionTrabaja, montoOrdenPatrol, modeloTelefono, tipoSim, planPropuesto, paqueteMinutos, paqueteSms, paqueteDatos, clienteExiste, segmentacion, montoSubsidio, rentaAnterior, rentaActual, formaPago, sinFronteras, informacionTarjeta, tipoVenta);
+    }
+    
     public void Inicio(GestorLogico pPrincipal){
         Ventana_Login = new VLogin(pPrincipal);
         Ventana_Login.setVisible(true);
@@ -173,11 +200,9 @@ public class GestorLogico {
                      break;
             case 3:  Ventana_Inbound.setVisible(false);
                      break;
-        }
-        
-        
-        
+        } 
     }
+    
     public void VVentaProducto(GestorLogico pGLPrincipal, int pPadre,String pcedula,String pnombre,String ptelefono,int pproc ,int renta,String pBase){
         Ventana_Venta_Producto = new VVentaProducto(pGLPrincipal,pPadre);
         Ventana_Venta_Producto.setVisible(true);
@@ -189,10 +214,46 @@ public class GestorLogico {
             case 3:  Ventana_Inbound.setVisible(false);
                      break;
         }
-        
+    }
+    
+    public void VVentaDTH(GestorLogico pGLPrincipal, int pPadre, VentaGeneral vg){
+        Ventana_DTH = new VVentaDTH(pGLPrincipal,pPadre,vg);
+        Ventana_DTH.setVisible(true);
+        switch (pPadre) {
+            case 1:  Ventana_Venta_Producto.setVisible(false);
+                     break;
+        }
+    }
+    
+    public void VVentaMovil(GestorLogico pGLPrincipal, int pPadre, VentaGeneral vg){
+        Ventana_Movil = new VVentaMovil(pGLPrincipal,pPadre,vg);
+        Ventana_Movil.setVisible(true);
+        switch (pPadre) {
+            case 1:  Ventana_Venta_Producto.setVisible(false);
+                     break;
+        }
+    }
+    
+    public void Regresar_DTH(int pPadre){
+        Ventana_DTH.setVisible(false);
+        switch (pPadre) {
+            case 1:  Ventana_Login.setVisible(true);
+                     break;
+        }
         
         
     }
+    
+       public void Regresar_Movil(int pPadre){
+        Ventana_Movil.setVisible(false);
+        switch (pPadre) {
+            case 1:  Ventana_Login.setVisible(true);
+                     break;
+        }
+        
+        
+    }
+    
     public void Regresar_Venta(int pPadre){
         Ventana_Venta.setVisible(false);
         switch (pPadre) {

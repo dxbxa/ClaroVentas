@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -16,22 +23,11 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="65" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel18" min="-2" pref="1159" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jLabel13" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox9" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jLabel10" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jComboBox6" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -41,12 +37,17 @@
                           <Component id="jLabel14" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextField10" alignment="1" min="-2" pref="179" max="-2" attributes="0"/>
                           <Component id="jLabel17" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox10" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
                           <Component id="jLabel20" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextField13" alignment="1" min="-2" pref="179" max="-2" attributes="0"/>
                           <Component id="jLabel21" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Component id="jComboBox12" min="-2" pref="135" max="-2" attributes="0"/>
+                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTextField12" min="-2" pref="179" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jLabel22" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel19" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -57,30 +58,39 @@
                           <Component id="jComboBox2" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
                           <Component id="jLabel8" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jComboBox4" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
-                          <Component id="jLabel12" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox8" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
                           <Component id="jLabel15" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextField11" alignment="1" min="-2" pref="179" max="-2" attributes="0"/>
-                          <Component id="jComboBox13" min="-2" pref="135" max="-2" attributes="0"/>
+                          <Component id="jComboBox13" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
+                          <Component id="jLabel12" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox8" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextField8" alignment="1" min="-2" pref="179" max="-2" attributes="0"/>
-                          <Component id="jLabel7" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox3" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
-                          <Component id="jLabel9" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox5" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
-                          <Component id="jLabel11" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox7" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
-                          <Component id="jLabel16" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField12" alignment="1" min="-2" pref="179" max="-2" attributes="0"/>
                           <Component id="jLabel31" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                              <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
-                              <Component id="jCheckBox2" min="-2" max="-2" attributes="0"/>
+                              <Component id="jCheckBox1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jCheckBox2" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Component id="jLabel16" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox3" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
+                          <Component id="jLabel11" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox5" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
+                          <Component id="jLabel23" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox9" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
                       </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel18" alignment="0" min="-2" pref="1159" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -90,7 +100,7 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel18" min="-2" pref="37" max="-2" attributes="0"/>
@@ -122,82 +132,78 @@
                       <Component id="jTextField9" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel6" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel6" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="jLabel16" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel7" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel8" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox4" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel9" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox5" min="-2" max="-2" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jLabel10" min="-2" pref="24" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jComboBox6" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel12" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox8" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel11" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox7" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel13" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox9" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel13" min="-2" pref="24" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel14" min="-2" pref="24" max="-2" attributes="0"/>
+                              <Component id="jLabel8" min="-2" pref="24" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jComboBox4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBox5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel15" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="jLabel11" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel12" min="-2" pref="24" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField11" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jComboBox8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jComboBox12" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel23" min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jComboBox9" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="jLabel16" min="-2" pref="24" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField12" min="-2" max="-2" attributes="0"/>
-                  </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel17" min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="jLabel14" min="-2" pref="24" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox10" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jTextField10" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel15" min="-2" pref="24" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextField11" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel17" min="-2" pref="24" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                      <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jTextField12" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                       <Component id="jLabel20" min="-2" pref="24" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
@@ -205,21 +211,12 @@
                       <Component id="jTextField13" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel31" min="-2" pref="27" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel19" min="-2" pref="24" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jComboBox11" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="jLabel31" min="-2" pref="27" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jCheckBox2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
                               <Component id="jLabel22" min="-2" pref="24" max="-2" attributes="0"/>
@@ -228,178 +225,45 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jComboBox13" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel19" min="-2" pref="24" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="jComboBox11" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="25" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel18">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" id="Active Caption" palette="2" red="ff" type="palette"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="18" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="66" red="66" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="DTH"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="10" style="0"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Requerido*"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="jLabel20">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="NOMBRE DE LA EMPRESA QUE TRABAJA *"/>
+        <Property name="text" type="java.lang.String" value="INFORMACION DE LA TARJETA"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField6">
+    <Component class="javax.swing.JTextField" name="jTextField13">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="PROVINCIA, CANTON Y DISTRITO DEL TRABAJO *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="DIRECCION EXACTA DEL TRABAJO *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextField8">
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox1">
+    <Component class="javax.swing.JComboBox" name="jComboBox6">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
+          <StringArray count="11">
             <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="MONTO DE LA ORDEN PATRONAL *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextField9">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="MODELO DEL TELEFONO *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox2">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="TIPO DE SIM *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox3">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel8">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="PAQUETE DE MINUTOS *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox4">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="PAQUETE SMS *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox5">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
+            <StringItem index="1" value="PLANES FINANCIADOS"/>
+            <StringItem index="2" value="CUENTA CONTROL"/>
+            <StringItem index="3" value="PLANES LIMITADOS"/>
+            <StringItem index="4" value="PLANES LTE"/>
+            <StringItem index="5" value="PLANES A TU MEDIDA"/>
+            <StringItem index="6" value="PLAN IPHONE 1 (RENOVACION)"/>
+            <StringItem index="7" value="PLAN IPHONE 2 (RENOVACION)"/>
+            <StringItem index="8" value="MI PRIMER CLARO"/>
+            <StringItem index="9" value="SMATRTPHONE 3"/>
+            <StringItem index="10" value="DATA CARD"/>
           </StringArray>
         </Property>
       </Properties>
@@ -415,136 +279,19 @@
         <Property name="text" type="java.lang.String" value="PLAN PROPUESTO *"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox6">
+    <Component class="javax.swing.JComboBox" name="jComboBox4">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
+          <StringArray count="9">
             <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox7">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="SEGMENTACION *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox8">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel12">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="CLIENTE EXISTENTE *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel13">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="PAQUETE DE DATOS *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox9">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel14">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="MONTO DEL SUBSIDIO *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextField10">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel15">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="RENTA ANTERIOR (para renovacion) *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextField11">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel16">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="RENTA ACTUAL *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextField12">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel17">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="RENTA ACTUAL *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox10">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
+            <StringItem index="1" value="60 MINUTOS"/>
+            <StringItem index="2" value="120 MINUTOS"/>
+            <StringItem index="3" value="180 MINUTOS"/>
+            <StringItem index="4" value="360 MINUTOS"/>
+            <StringItem index="5" value="600 MINUTOS"/>
+            <StringItem index="6" value="1000 MINUTOS"/>
+            <StringItem index="7" value="2500 MINUTOS"/>
+            <StringItem index="8" value="SIN PAQUETE"/>
           </StringArray>
         </Property>
       </Properties>
@@ -560,6 +307,105 @@
         <Property name="text" type="java.lang.String" value="SIN FRONTERA NORTEAMERICANA *"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JLabel" name="jLabel17">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="RENTA ACTUAL *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="PAQUETE DE MINUTOS *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel19">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="FORMA DE PAGO *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox2">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="49">
+            <StringItem index="0" value="Choose"/>
+            <StringItem index="1" value="AZUMI A35S NEGRO"/>
+            <StringItem index="2" value="Alcatel Pixi3 3.5 Black"/>
+            <StringItem index="3" value="GEMALTO"/>
+            <StringItem index="4" value="Huawei Mate 7 Negro"/>
+            <StringItem index="5" value="Huawei Mate 7 Negro LTD(D)"/>
+            <StringItem index="6" value="Huawei P8 Gris Titaneo"/>
+            <StringItem index="7" value="Huawei P8 Gris Titaneo(D)"/>
+            <StringItem index="8" value="Huawei Y3 Negro"/>
+            <StringItem index="9" value="Huawei Y520"/>
+            <StringItem index="10" value="Huawei Y520 Negro"/>
+            <StringItem index="11" value="Iphone 5 S Silver 16GB(D)"/>
+            <StringItem index="12" value="Iphone 5 S Space Gray 16GB(D)"/>
+            <StringItem index="13" value="Iphone 6 Plus Space Gray 16GB(D)"/>
+            <StringItem index="14" value="Iphone 6 Space Gray 64GB(D)"/>
+            <StringItem index="15" value="Iphone 6 S Space Gray 16GB(D)"/>
+            <StringItem index="16" value="Iphone 6 Space Gray 16GB(D)"/>
+            <StringItem index="17" value="Iphone 6 S Space Gray 16GB"/>
+            <StringItem index="18" value="Iphone 6 S Silver Gray 16GB"/>
+            <StringItem index="19" value="Iphone 6 S Silver 64GB"/>
+            <StringItem index="20" value="Iphone 6 S Silver Gray 64GB(D)"/>
+            <StringItem index="21" value="LG C70 Spirit Negro"/>
+            <StringItem index="22" value="LG G4 Negro"/>
+            <StringItem index="23" value="LG G4 Stylus Titan"/>
+            <StringItem index="24" value="M4 4045 Grafito"/>
+            <StringItem index="25" value="M4 4045 XT"/>
+            <StringItem index="26" value="M4 In Touch SS4040 Grafito(D)"/>
+            <StringItem index="27" value="M4 SS4045 Grafito(D)"/>
+            <StringItem index="28" value="M4 SS Love 4045"/>
+            <StringItem index="29" value="Modem Huawei E 3531 S6(D)"/>
+            <StringItem index="30" value="Modem Huawei E 3531 S-6(D)"/>
+            <StringItem index="31" value="Modem Huawei E 5330 BS-6(D)"/>
+            <StringItem index="32" value="Samsung Ace 4 Lite Negro (D)"/>
+            <StringItem index="33" value="Samsung Ace 4 Neo Negro (D)"/>
+            <StringItem index="34" value="Samsung Ace Neo Blanco"/>
+            <StringItem index="35" value="Samsung  Core 2 Negro(D)"/>
+            <StringItem index="36" value="Samsung GLX Ace 4 Neo"/>
+            <StringItem index="37" value="Samsung GLX Note 5 SM-N920G Negro"/>
+            <StringItem index="38" value="Samsung GLX S6 32GB G9201 Black(D)"/>
+            <StringItem index="39" value="Samsung GLX S6 64GB G9201 Black(D)"/>
+            <StringItem index="40" value="Samsung J5 Negro"/>
+            <StringItem index="41" value="Samsung J7 Blanco"/>
+            <StringItem index="42" value="Samsung J7 Negro"/>
+            <StringItem index="43" value="Samsung J1 Ace Blanco(D)"/>
+            <StringItem index="44" value="Samsung J1 Ace Negro(D)"/>
+            <StringItem index="45" value="Samsung Ace 4 Neo Blanco (D)"/>
+            <StringItem index="46" value="Sony Xperia E4 Negro(D)"/>
+            <StringItem index="47" value="Sony Xperia Z5 Negro"/>
+            <StringItem index="48" value="NYX Fenix Negro(D)"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox11">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Choose"/>
+            <StringItem index="1" value="TARJETA"/>
+            <StringItem index="2" value="EFECTIVO"/>
+            <StringItem index="3" value="NO REQUIERE PAGO"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
     <Component class="javax.swing.JCheckBox" name="jCheckBox1">
       <Properties>
         <Property name="text" type="java.lang.String" value="ACEPTA PLAN"/>
@@ -573,45 +419,51 @@
         <Property name="text" type="java.lang.String" value="NO ACEPTA PLAN"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel19">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="FORMA DE PAGO *"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox11">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel20">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="INFORMACION DE LA TARJETA"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextField13">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel21">
+    <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="10" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="numero de tarjeta y fecha de vencimiento"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Requerido*"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel15">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="RENTA ANTERIOR (para renovacion) *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField6">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField11">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="NOMBRE DE LA EMPRESA QUE TRABAJA *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="DIRECCION EXACTA DEL TRABAJO *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="PROVINCIA, CANTON Y DISTRITO DEL TRABAJO *"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel22">
@@ -622,14 +474,484 @@
         <Property name="text" type="java.lang.String" value="TIPO DE VENTA *"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox13">
+    <Component class="javax.swing.JLabel" name="jLabel13">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="PAQUETE DE DATOS *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox1">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
+          <StringArray count="466">
             <StringItem index="0" value="Choose"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
+            <StringItem index="1" value="SAN JOSE CENTRAL CARMEN (NE)"/>
+            <StringItem index="2" value="SAN JOSE CENTRAL MERCED (NO)"/>
+            <StringItem index="3" value="SAN JOSE CENTRAL Division "/>
+            <StringItem index="4" value="SAN JOSE CENTRAL CATEDRAL (SE)"/>
+            <StringItem index="5" value="SAN JOSE CENTRAL ZAPOTE"/>
+            <StringItem index="6" value="SAN JOSE CENTRAL SAN FCO. 2 RIOS"/>
+            <StringItem index="7" value="SAN JOSE CENTRAL URUCA"/>
+            <StringItem index="8" value="SAN JOSE CENTRAL MATA REDONDA"/>
+            <StringItem index="9" value="SAN JOSE CENTRAL PAVAS"/>
+            <StringItem index="10" value="SAN JOSE CENTRAL HATILLO"/>
+            <StringItem index="11" value="SAN JOSE CENTRAL SAN SEBASTIAN"/>
+            <StringItem index="12" value="SAN JOSE ESCAZU ESCAZU"/>
+            <StringItem index="13" value="SAN JOSE ESCAZU SAN ANTONIO"/>
+            <StringItem index="14" value="SAN JOSE ESCAZU SAN RAFAEL"/>
+            <StringItem index="15" value="SAN JOSE DESAMPARADOS DESAMPARADOS"/>
+            <StringItem index="16" value="SAN JOSE DESAMPARADOS SAN MIGUEL"/>
+            <StringItem index="17" value="SAN JOSE DESAMPARADOS SAN JUAN DE DIOS"/>
+            <StringItem index="18" value="SAN JOSE DESAMPARADOS SAN RAFAEL ARRIBA"/>
+            <StringItem index="19" value="SAN JOSE DESAMPARADOS SAN ANTONIO"/>
+            <StringItem index="20" value="SAN JOSE DESAMPARADOS FRAILES"/>
+            <StringItem index="21" value="SAN JOSE DESAMPARADOS PATARRA"/>
+            <StringItem index="22" value="SAN JOSE DESAMPARADOS SAN CRISTOBAL"/>
+            <StringItem index="23" value="SAN JOSE DESAMPARADOS ROSARIO"/>
+            <StringItem index="24" value="SAN JOSE DESAMPARADOS DAMAS"/>
+            <StringItem index="25" value="SAN JOSE DESAMPARADOS SAN RAFAEL ABAJO"/>
+            <StringItem index="26" value="SAN JOSE DESAMPARADOS GRAVILIAS"/>
+            <StringItem index="27" value="SAN JOSE PURISCAL SANTIAGO"/>
+            <StringItem index="28" value="SAN JOSE PURISCAL MERCEDES SUR"/>
+            <StringItem index="29" value="SAN JOSE PURISCAL BARBACOAS"/>
+            <StringItem index="30" value="SAN JOSE PURISCAL GRIFO ALTO"/>
+            <StringItem index="31" value="SAN JOSE PURISCAL SAN RAFAEL"/>
+            <StringItem index="32" value="SAN JOSE PURISCAL CANDELARITA"/>
+            <StringItem index="33" value="SAN JOSE PURISCAL DESAMPARADITOS"/>
+            <StringItem index="34" value="SAN JOSE PURISCAL SAN ANTONIO"/>
+            <StringItem index="35" value="SAN JOSE PURISCAL CHIRES"/>
+            <StringItem index="36" value="SAN JOSE TARRAZU SAN MARCOS"/>
+            <StringItem index="37" value="SAN JOSE TARRAZU SAN LORENZO"/>
+            <StringItem index="38" value="SAN JOSE TARRAZU SAN CARLOS"/>
+            <StringItem index="39" value="SAN JOSE ASERRI ASERRI"/>
+            <StringItem index="40" value="SAN JOSE ASERRI TARBACA"/>
+            <StringItem index="41" value="SAN JOSE ASERRI VUELTA DE JORCO"/>
+            <StringItem index="42" value="SAN JOSE ASERRI SAN GABRIEL"/>
+            <StringItem index="43" value="SAN JOSE ASERRI LA LEGUA"/>
+            <StringItem index="44" value="SAN JOSE ASERRI MONTERREY"/>
+            <StringItem index="45" value="SAN JOSE ASERRI SALITRILLOS"/>
+            <StringItem index="46" value="SAN JOSE MORA COLON"/>
+            <StringItem index="47" value="SAN JOSE MORA GUAYABO"/>
+            <StringItem index="48" value="SAN JOSE MORA TABARCIA"/>
+            <StringItem index="49" value="SAN JOSE MORA PIEDRAS NEGRAS"/>
+            <StringItem index="50" value="SAN JOSE MORA PICAGRES"/>
+            <StringItem index="51" value="SAN JOSE GOICOECHEA GUADALUPE"/>
+            <StringItem index="52" value="SAN JOSE GOICOECHEA SAN FRANCISCO"/>
+            <StringItem index="53" value="SAN JOSE GOICOECHEA CALLE BLANCOS"/>
+            <StringItem index="54" value="SAN JOSE GOICOECHEA MATA DE PLATANO"/>
+            <StringItem index="55" value="SAN JOSE GOICOECHEA IPIS"/>
+            <StringItem index="56" value="SAN JOSE GOICOECHEA RANCHO REDONDO"/>
+            <StringItem index="57" value="SAN JOSE GOICOECHEA PURRAL"/>
+            <StringItem index="58" value="SAN JOSE SANTA ANA SANTA ANA"/>
+            <StringItem index="59" value="SAN JOSE SANTA ANA SALITRAL"/>
+            <StringItem index="60" value="SAN JOSE SANTA ANA POZOS"/>
+            <StringItem index="61" value="SAN JOSE SANTA ANA URUCA"/>
+            <StringItem index="62" value="SAN JOSE SANTA ANA PIEDADES"/>
+            <StringItem index="63" value="SAN JOSE SANTA ANA BRASIL"/>
+            <StringItem index="64" value="SAN JOSE ALAJUELITA ALAJUELITA"/>
+            <StringItem index="65" value="SAN JOSE ALAJUELITA SAN JOSECITO"/>
+            <StringItem index="66" value="SAN JOSE ALAJUELITA SAN ANTONIO"/>
+            <StringItem index="67" value="SAN JOSE ALAJUELITA CONCEPCION"/>
+            <StringItem index="68" value="SAN JOSE ALAJUELITA SAN FELIPE"/>
+            <StringItem index="69" value="SAN JOSE CORONADO SAN ISIDRO"/>
+            <StringItem index="70" value="SAN JOSE CORONADO SAN RAFAEL"/>
+            <StringItem index="71" value="SAN JOSE CORONADO DULCE NOMBRE DE JESUS"/>
+            <StringItem index="72" value="SAN JOSE CORONADO PATALILLO"/>
+            <StringItem index="73" value="SAN JOSE CORONADO CASCAJAL"/>
+            <StringItem index="74" value="SAN JOSE ACOSTA SAN IGNACIO"/>
+            <StringItem index="75" value="SAN JOSE ACOSTA GUAITIL"/>
+            <StringItem index="76" value="SAN JOSE ACOSTA PALMICHAL"/>
+            <StringItem index="77" value="SAN JOSE ACOSTA CANGREJAL"/>
+            <StringItem index="78" value="SAN JOSE ACOSTA SABANILLAS"/>
+            <StringItem index="79" value="SAN JOSE TIBAS SAN JUAN"/>
+            <StringItem index="80" value="SAN JOSE TIBAS CINCO ESQUINAS"/>
+            <StringItem index="81" value="SAN JOSE TIBAS ANSELMO LLORENTE"/>
+            <StringItem index="82" value="SAN JOSE TIBAS LEON XIII"/>
+            <StringItem index="83" value="SAN JOSE TIBAS COLIMA"/>
+            <StringItem index="84" value="SAN JOSE MORAVIA SAN VICENTE"/>
+            <StringItem index="85" value="SAN JOSE MORAVIA SAN JERONIMO"/>
+            <StringItem index="86" value="SAN JOSE MORAVIA TRINIDAD"/>
+            <StringItem index="87" value="SAN JOSE MONTES DE OCA SAN PEDRO"/>
+            <StringItem index="88" value="SAN JOSE MONTES DE OCA SABANILLA"/>
+            <StringItem index="89" value="SAN JOSE MONTES DE OCA MERCEDES"/>
+            <StringItem index="90" value="SAN JOSE MONTES DE OCA SAN RAFAEL"/>
+            <StringItem index="91" value="SAN JOSE TURRUBARES SAN PABLO"/>
+            <StringItem index="92" value="SAN JOSE TURRUBARES SAN PEDRO"/>
+            <StringItem index="93" value="SAN JOSE TURRUBARES SAN JUAN DE MATA // CARARA"/>
+            <StringItem index="94" value="SAN JOSE TURRUBARES SAN LUIS"/>
+            <StringItem index="95" value="SAN JOSE DOTA SANTA MARIA"/>
+            <StringItem index="96" value="SAN JOSE DOTA JARDIN"/>
+            <StringItem index="97" value="SAN JOSE DOTA COPEY"/>
+            <StringItem index="98" value="SAN JOSE CURRIDABAT CURRIDABAT"/>
+            <StringItem index="99" value="SAN JOSE CURRIDABAT GRANADILLA"/>
+            <StringItem index="100" value="SAN JOSE CURRIDABAT SANCHEZ"/>
+            <StringItem index="101" value="SAN JOSE CURRIDABAT TIRRASES"/>
+            <StringItem index="102" value="SAN JOSE PEREZ ZELEDON SAN ISIDRO"/>
+            <StringItem index="103" value="SAN JOSE PEREZ ZELEDON GENERAL"/>
+            <StringItem index="104" value="SAN JOSE PEREZ ZELEDON DANIEL FLORES"/>
+            <StringItem index="105" value="SAN JOSE PEREZ ZELEDON RIVAS"/>
+            <StringItem index="106" value="SAN JOSE PEREZ ZELEDON SAN PEDRO"/>
+            <StringItem index="107" value="SAN JOSE PEREZ ZELEDON PLATANARES"/>
+            <StringItem index="108" value="SAN JOSE PEREZ ZELEDON PEJIBAYE"/>
+            <StringItem index="109" value="SAN JOSE PEREZ ZELEDON CAJON"/>
+            <StringItem index="110" value="SAN JOSE PEREZ ZELEDON BARU"/>
+            <StringItem index="111" value="SAN JOSE PEREZ ZELEDON RIO NUEVO"/>
+            <StringItem index="112" value="SAN JOSE PEREZ ZELEDON PARAMO"/>
+            <StringItem index="113" value="SAN JOSE LEON CORTES SAN PABLO"/>
+            <StringItem index="114" value="SAN JOSE LEON CORTES SAN ANDRES"/>
+            <StringItem index="115" value="SAN JOSE LEON CORTES LLANO BONITO"/>
+            <StringItem index="116" value="SAN JOSE LEON CORTES SAN ISIDRO"/>
+            <StringItem index="117" value="SAN JOSE LEON CORTES SANTA CRUZ"/>
+            <StringItem index="118" value="SAN JOSE LEON CORTES SAN ANTONIO"/>
+            <StringItem index="119" value="PUNTARENAS PUNTARENAS PUNTARENAS"/>
+            <StringItem index="120" value="PUNTARENAS PUNTARENAS PITAHAYA"/>
+            <StringItem index="121" value="PUNTARENAS PUNTARENAS CHOMES"/>
+            <StringItem index="122" value="PUNTARENAS PUNTARENAS LEPANTO"/>
+            <StringItem index="123" value="PUNTARENAS PUNTARENAS PAQUERA"/>
+            <StringItem index="124" value="PUNTARENAS PUNTARENAS MANZANILLO"/>
+            <StringItem index="125" value="PUNTARENAS PUNTARENAS GUACIMAL"/>
+            <StringItem index="126" value="PUNTARENAS PUNTARENAS BARRANCA"/>
+            <StringItem index="127" value="PUNTARENAS PUNTARENAS MONTE VERDE"/>
+            <StringItem index="128" value="PUNTARENAS PUNTARENAS ISLA DEL CORO"/>
+            <StringItem index="129" value="PUNTARENAS PUNTARENAS COBANO"/>
+            <StringItem index="130" value="PUNTARENAS PUNTARENAS CHACARITA"/>
+            <StringItem index="131" value="PUNTARENAS PUNTARENAS CHIRA"/>
+            <StringItem index="132" value="PUNTARENAS PUNTARENAS ACAPULCO"/>
+            <StringItem index="133" value="PUNTARENAS PUNTARENAS EL ROBLE"/>
+            <StringItem index="134" value="PUNTARENAS PUNTARENAS ARANCIBIA"/>
+            <StringItem index="135" value="PUNTARENAS ESPARZA ESPIRITU SANTO"/>
+            <StringItem index="136" value="PUNTARENAS ESPARZA SAN JUAN GRANDE"/>
+            <StringItem index="137" value="PUNTARENAS ESPARZA MACACONA"/>
+            <StringItem index="138" value="PUNTARENAS ESPARZA SAN RAFAEL"/>
+            <StringItem index="139" value="PUNTARENAS ESPARZA SAN JERONIMO"/>
+            <StringItem index="140" value="PUNTARENAS BUENOS AIRES BUENOS AIRES"/>
+            <StringItem index="141" value="PUNTARENAS BUENOS AIRES VOLCAN"/>
+            <StringItem index="142" value="PUNTARENAS BUENOS AIRES POTRERO GRANDE"/>
+            <StringItem index="143" value="PUNTARENAS BUENOS AIRES BORUCA"/>
+            <StringItem index="144" value="PUNTARENAS BUENOS AIRES PILAS"/>
+            <StringItem index="145" value="PUNTARENAS BUENOS AIRES COLINAS"/>
+            <StringItem index="146" value="PUNTARENAS BUENOS AIRES CHANGUENA"/>
+            <StringItem index="147" value="PUNTARENAS BUENOS AIRES BIOLLEY"/>
+            <StringItem index="148" value="PUNTARENAS BUENOS AIRES BRUNKA"/>
+            <StringItem index="149" value="PUNTARENAS MONTES DE ORO MIRAMAR"/>
+            <StringItem index="150" value="PUNTARENAS MONTES DE ORO UNION"/>
+            <StringItem index="151" value="PUNTARENAS MONTES DE ORO SAN ISIDRO"/>
+            <StringItem index="152" value="PUNTARENAS OSA CORTES"/>
+            <StringItem index="153" value="PUNTARENAS OSA PALMAR"/>
+            <StringItem index="154" value="PUNTARENAS OSA SIERPE"/>
+            <StringItem index="155" value="PUNTARENAS OSA BAHIA BALLENA"/>
+            <StringItem index="156" value="PUNTARENAS OSA PIEDRAS BLANCAS"/>
+            <StringItem index="157" value="PUNTARENAS AGUIRRE QUEPOS"/>
+            <StringItem index="158" value="PUNTARENAS AGUIRRE SAVEGRE"/>
+            <StringItem index="159" value="PUNTARENAS AGUIRRE NARANJITO"/>
+            <StringItem index="160" value="PUNTARENAS GOLFITO GOLFITO"/>
+            <StringItem index="161" value="PUNTARENAS GOLFITO JIMENEZ"/>
+            <StringItem index="162" value="PUNTARENAS GOLFITO GUAYCARA"/>
+            <StringItem index="163" value="PUNTARENAS GOLFITO PAVON / PAVONES"/>
+            <StringItem index="164" value="PUNTARENAS COTO BRUS SAN VITO"/>
+            <StringItem index="165" value="PUNTARENAS COTO BRUS SABALITO"/>
+            <StringItem index="166" value="PUNTARENAS COTO BRUS AGUA BUENA"/>
+            <StringItem index="167" value="PUNTARENAS COTO BRUS LIMONCITO"/>
+            <StringItem index="168" value="PUNTARENAS COTO BRUS PITTIER"/>
+            <StringItem index="169" value="PUNTARENAS PARRITA PARRITA"/>
+            <StringItem index="170" value="PUNTARENAS CORREDORES CORREDOR"/>
+            <StringItem index="171" value="PUNTARENAS CORREDORES LA CUESTA"/>
+            <StringItem index="172" value="PUNTARENAS CORREDORES CANOAS"/>
+            <StringItem index="173" value="PUNTARENAS CORREDORES LAUREL"/>
+            <StringItem index="174" value="PUNTARENAS GARABITO JACO"/>
+            <StringItem index="175" value="PUNTARENAS GARABITO TARCOLES"/>
+            <StringItem index="176" value="LIMON LIMON LIMON"/>
+            <StringItem index="177" value="LIMON LIMON VALLE LA ESTRELLA"/>
+            <StringItem index="178" value="LIMON LIMON LIVERPOOL"/>
+            <StringItem index="179" value="LIMON LIMON MATAMA"/>
+            <StringItem index="180" value="LIMON POCOCI GUAPILES"/>
+            <StringItem index="181" value="LIMON POCOCI JIMENEZ"/>
+            <StringItem index="182" value="LIMON POCOCI RITA"/>
+            <StringItem index="183" value="LIMON POCOCI ROXANA"/>
+            <StringItem index="184" value="LIMON POCOCI CARIARI"/>
+            <StringItem index="185" value="LIMON POCOCI COLORADO"/>
+            <StringItem index="186" value="LIMON SIQUIRRES SIQUIRRES"/>
+            <StringItem index="187" value="LIMON SIQUIRRES PACUARITO"/>
+            <StringItem index="188" value="LIMON SIQUIRRES FLORIDA"/>
+            <StringItem index="189" value="LIMON SIQUIRRES GERMANIA"/>
+            <StringItem index="190" value="LIMON SIQUIRRES CAIRO"/>
+            <StringItem index="191" value="LIMON SIQUIRRES ALEGRIA"/>
+            <StringItem index="192" value="LIMON TALAMANCA BRATSI"/>
+            <StringItem index="193" value="LIMON TALAMANCA SIXAOLA"/>
+            <StringItem index="194" value="LIMON TALAMANCA CAHUITA"/>
+            <StringItem index="195" value="LIMON MATINA MATINA"/>
+            <StringItem index="196" value="LIMON MATINA BATAN"/>
+            <StringItem index="197" value="LIMON MATINA CARRANDI"/>
+            <StringItem index="198" value="LIMON GUACIMO GUACIMO"/>
+            <StringItem index="199" value="LIMON GUACIMO MERCEDES"/>
+            <StringItem index="200" value="LIMON GUACIMO POCORA"/>
+            <StringItem index="201" value="LIMON GUACIMO RIO JIMENEZ"/>
+            <StringItem index="202" value="LIMON GUACIMO DUACARI"/>
+            <StringItem index="203" value="HEREDIA HEREDIA HEREDIA"/>
+            <StringItem index="204" value="HEREDIA HEREDIA MERCEDES"/>
+            <StringItem index="205" value="HEREDIA HEREDIA SAN FRANCISCO"/>
+            <StringItem index="206" value="HEREDIA HEREDIA ULLOA"/>
+            <StringItem index="207" value="HEREDIA HEREDIA VARABLANCA"/>
+            <StringItem index="208" value="HEREDIA BARVA BARVA"/>
+            <StringItem index="209" value="HEREDIA BARVA SAN PEDRO"/>
+            <StringItem index="210" value="HEREDIA BARVA SAN PABLO"/>
+            <StringItem index="211" value="HEREDIA BARVA SAN ROQUE"/>
+            <StringItem index="212" value="HEREDIA BARVA SANTA LUCIA"/>
+            <StringItem index="213" value="HEREDIA BARVA SAN JOSE DE LA MONTA&#xd1;A"/>
+            <StringItem index="214" value="HEREDIA SANTO DOMINGO SANTO DOMINGO"/>
+            <StringItem index="215" value="HEREDIA SANTO DOMINGO SAN VICENTE"/>
+            <StringItem index="216" value="HEREDIA SANTO DOMINGO SAN MIGUEL"/>
+            <StringItem index="217" value="HEREDIA SANTO DOMINGO PARACITO"/>
+            <StringItem index="218" value="HEREDIA SANTO DOMINGO SANTO TOMAS"/>
+            <StringItem index="219" value="HEREDIA SANTO DOMINGO SANTO ROSA"/>
+            <StringItem index="220" value="HEREDIA SANTO DOMINGO TURES"/>
+            <StringItem index="221" value="HEREDIA SANTO DOMINGO PARA"/>
+            <StringItem index="222" value="HEREDIA SANTA BARBARA SANTA BARBARA"/>
+            <StringItem index="223" value="HEREDIA SANTA BARBARA SAN PEDRO"/>
+            <StringItem index="224" value="HEREDIA SANTA BARBARA SAN JUAN"/>
+            <StringItem index="225" value="HEREDIA SANTA BARBARA JESUS"/>
+            <StringItem index="226" value="HEREDIA SANTA BARBARA SANTO DOMINGO"/>
+            <StringItem index="227" value="HEREDIA SANTA BARBARA PURABA"/>
+            <StringItem index="228" value="HEREDIA SAN RAFAEL SAN RAFAEL"/>
+            <StringItem index="229" value="HEREDIA SAN RAFAEL SAN JOSECITO"/>
+            <StringItem index="230" value="HEREDIA SAN RAFAEL SANTIAGO"/>
+            <StringItem index="231" value="HEREDIA SAN RAFAEL LOS ANGELES"/>
+            <StringItem index="232" value="HEREDIA SAN RAFAEL CONCEPCION"/>
+            <StringItem index="233" value="HEREDIA SAN ISIDRO SAN ISIDRO"/>
+            <StringItem index="234" value="HEREDIA SAN ISIDRO SAN JOSE"/>
+            <StringItem index="235" value="HEREDIA SAN ISIDRO CONCEPCION"/>
+            <StringItem index="236" value="HEREDIA SAN ISIDRO SAN FRANCISCO"/>
+            <StringItem index="237" value="HEREDIA BELEN SAN ANTONIO"/>
+            <StringItem index="238" value="HEREDIA BELEN LA RIBERA"/>
+            <StringItem index="239" value="HEREDIA BELEN ASUNCION"/>
+            <StringItem index="240" value="HEREDIA FLORES SAN JOAQUIN"/>
+            <StringItem index="241" value="HEREDIA FLORES BARRANTES"/>
+            <StringItem index="242" value="HEREDIA FLORES LLORENTE"/>
+            <StringItem index="243" value="HEREDIA SAN PABLO SAN PABLO"/>
+            <StringItem index="244" value="HEREDIA SARAPIQUI PUERTO VIEJO"/>
+            <StringItem index="245" value="HEREDIA SARAPIQUI LA VIRGEN"/>
+            <StringItem index="246" value="HEREDIA SARAPIQUI HORQUETAS"/>
+            <StringItem index="247" value="HEREDIA SARAPIQUI LLANURAS DEL GASPAR"/>
+            <StringItem index="248" value="HEREDIA SARAPIQUI CURE&#xd1;A"/>
+            <StringItem index="249" value="GUANACASTE LIBERIA LIBERIA"/>
+            <StringItem index="250" value="GUANACASTE LIBERIA CA&#xd1;AS DULCES"/>
+            <StringItem index="251" value="GUANACASTE LIBERIA MAYORGA"/>
+            <StringItem index="252" value="GUANACASTE LIBERIA NACASCOLO"/>
+            <StringItem index="253" value="GUANACASTE LIBERIA CURUBANDE"/>
+            <StringItem index="254" value="GUANACASTE NICOYA NICOYA"/>
+            <StringItem index="255" value="GUANACASTE NICOYA MANSION"/>
+            <StringItem index="256" value="GUANACASTE NICOYA SAN ANTONIO"/>
+            <StringItem index="257" value="GUANACASTE NICOYA QUEBRADA HONDA"/>
+            <StringItem index="258" value="GUANACASTE NICOYA SAMARA"/>
+            <StringItem index="259" value="GUANACASTE NICOYA NOSARA"/>
+            <StringItem index="260" value="GUANACASTE NICOYA BELEN DE NOSARITA"/>
+            <StringItem index="261" value="GUANACASTE SANTA CRUZ SANTA CRUZ"/>
+            <StringItem index="262" value="GUANACASTE SANTA CRUZ BOLSON"/>
+            <StringItem index="263" value="GUANACASTE SANTA CRUZ VEINTISIETE DE ABRIL 27 D"/>
+            <StringItem index="264" value="GUANACASTE SANTA CRUZ TEMPATE"/>
+            <StringItem index="265" value="GUANACASTE SANTA CRUZ CARTAGENA"/>
+            <StringItem index="266" value="GUANACASTE SANTA CRUZ CUAJINIQUIL"/>
+            <StringItem index="267" value="GUANACASTE SANTA CRUZ DIRIA"/>
+            <StringItem index="268" value="GUANACASTE SANTA CRUZ CABO VELAS"/>
+            <StringItem index="269" value="GUANACASTE SANTA CRUZ TAMARINDO"/>
+            <StringItem index="270" value="GUANACASTE BAGACES BAGACES"/>
+            <StringItem index="271" value="GUANACASTE BAGACES FORTUNA"/>
+            <StringItem index="272" value="GUANACASTE BAGACES MOGOTE"/>
+            <StringItem index="273" value="GUANACASTE BAGACES RIO NARANJO"/>
+            <StringItem index="274" value="GUANACASTE CARRILLO FILADELFIA"/>
+            <StringItem index="275" value="GUANACASTE CARRILLO PALMIRA"/>
+            <StringItem index="276" value="GUANACASTE CARRILLO SARDINAL"/>
+            <StringItem index="277" value="GUANACASTE CARRILLO BELEN"/>
+            <StringItem index="278" value="GUANACASTE CA&#xd1;AS CA&#xd1;AS"/>
+            <StringItem index="279" value="GUANACASTE CA&#xd1;AS PALMIRA"/>
+            <StringItem index="280" value="GUANACASTE CA&#xd1;AS SAN MIGUEL"/>
+            <StringItem index="281" value="GUANACASTE CA&#xd1;AS BEBEDERO"/>
+            <StringItem index="282" value="GUANACASTE CA&#xd1;AS POROSAL"/>
+            <StringItem index="283" value="GUANACASTE ABANGARES LAS JUNTAS"/>
+            <StringItem index="284" value="GUANACASTE ABANGARES SIERRA"/>
+            <StringItem index="285" value="GUANACASTE ABANGARES SAN JUAN"/>
+            <StringItem index="286" value="GUANACASTE ABANGARES COLORADO"/>
+            <StringItem index="287" value="GUANACASTE TILARAN TILARAN"/>
+            <StringItem index="288" value="GUANACASTE TILARAN QUEBRADA GRANDE"/>
+            <StringItem index="289" value="GUANACASTE TILARAN TRONADORA"/>
+            <StringItem index="290" value="GUANACASTE TILARAN SANTA ROSA"/>
+            <StringItem index="291" value="GUANACASTE TILARAN LIBANO"/>
+            <StringItem index="292" value="GUANACASTE TILARAN TIERRAS MORENAS"/>
+            <StringItem index="293" value="GUANACASTE TILARAN ARENAL"/>
+            <StringItem index="294" value="GUANACASTE NANDAYURE CARMONA"/>
+            <StringItem index="295" value="GUANACASTE NANDAYURE SANTA RITA"/>
+            <StringItem index="296" value="GUANACASTE NANDAYURE ZAPOTAL"/>
+            <StringItem index="297" value="GUANACASTE NANDAYURE SAN PABLO"/>
+            <StringItem index="298" value="GUANACASTE NANDAYURE PORVENIR"/>
+            <StringItem index="299" value="GUANACASTE NANDAYURE BEJUCO"/>
+            <StringItem index="300" value="GUANACASTE LA CRUZ LA CRUZ"/>
+            <StringItem index="301" value="GUANACASTE LA CRUZ SANTA CECILIA"/>
+            <StringItem index="302" value="GUANACASTE LA CRUZ LA GARITA"/>
+            <StringItem index="303" value="GUANACASTE LA CRUZ SANTA ELENA"/>
+            <StringItem index="304" value="GUANACASTE HOJANCHA HOJANCHA"/>
+            <StringItem index="305" value="GUANACASTE HOJANCHA MONTE ROMO"/>
+            <StringItem index="306" value="GUANACASTE HOJANCHA PUERTO CARRILLO"/>
+            <StringItem index="307" value="GUANACASTE HOJANCHA HUACAS"/>
+            <StringItem index="308" value="CARTAGO CARTAGO PARTE ORIENTAL "/>
+            <StringItem index="309" value="CARTAGO CARTAGO PARTE OCCIDENTAL"/>
+            <StringItem index="310" value="CARTAGO CARTAGO CARMEN"/>
+            <StringItem index="311" value="CARTAGO CARTAGO SAN NICOLAS"/>
+            <StringItem index="312" value="CARTAGO CARTAGO SAN FRANCISCO"/>
+            <StringItem index="313" value="CARTAGO CARTAGO GUADALUPE"/>
+            <StringItem index="314" value="CARTAGO CARTAGO CORRALILLO"/>
+            <StringItem index="315" value="CARTAGO CARTAGO TIERRA BLANCA"/>
+            <StringItem index="316" value="CARTAGO CARTAGO DULCE NOMBRE"/>
+            <StringItem index="317" value="CARTAGO CARTAGO LLANO GRANDE"/>
+            <StringItem index="318" value="CARTAGO CARTAGO QUEBRADILLAS"/>
+            <StringItem index="319" value="CARTAGO PARAISO PARAISO"/>
+            <StringItem index="320" value="CARTAGO PARAISO SANTIAGO"/>
+            <StringItem index="321" value="CARTAGO PARAISO OROSI"/>
+            <StringItem index="322" value="CARTAGO PARAISO CACHI"/>
+            <StringItem index="323" value="CARTAGO LA UNION TRES RIOS 3 RIOS"/>
+            <StringItem index="324" value="CARTAGO LA UNION SAN DIEGO"/>
+            <StringItem index="325" value="CARTAGO LA UNION SAN JUAN"/>
+            <StringItem index="326" value="CARTAGO LA UNION SAN RAFAEL"/>
+            <StringItem index="327" value="CARTAGO LA UNION CONCEPCION"/>
+            <StringItem index="328" value="CARTAGO LA UNION DULCE NOMBRE"/>
+            <StringItem index="329" value="CARTAGO LA UNION SAN RAMON"/>
+            <StringItem index="330" value="CARTAGO LA UNION RIO AZUL"/>
+            <StringItem index="331" value="CARTAGO JIMENEZ JUAN VI&#xd1;AS"/>
+            <StringItem index="332" value="CARTAGO JIMENEZ TUCURRIQUE"/>
+            <StringItem index="333" value="CARTAGO JIMENEZ PEJIBAYE"/>
+            <StringItem index="334" value="CARTAGO TURRIALBA TURRIALBA"/>
+            <StringItem index="335" value="CARTAGO TURRIALBA LA SUIZA"/>
+            <StringItem index="336" value="CARTAGO TURRIALBA PERALTA"/>
+            <StringItem index="337" value="CARTAGO TURRIALBA SANTA CRUZ"/>
+            <StringItem index="338" value="CARTAGO TURRIALBA SANTA TERESITA"/>
+            <StringItem index="339" value="CARTAGO TURRIALBA PAVONES"/>
+            <StringItem index="340" value="CARTAGO TURRIALBA TUIS"/>
+            <StringItem index="341" value="CARTAGO TURRIALBA TAYUTIC"/>
+            <StringItem index="342" value="CARTAGO TURRIALBA SANTA ROSA"/>
+            <StringItem index="343" value="CARTAGO TURRIALBA TRES EQUIS"/>
+            <StringItem index="344" value="CARTAGO TURRIALBA LA ISABEL"/>
+            <StringItem index="345" value="CARTAGO TURRIALBA EL CHIRRIPO"/>
+            <StringItem index="346" value="CARTAGO ALVARADO PACAYAS"/>
+            <StringItem index="347" value="CARTAGO ALVARADO CERVANTES"/>
+            <StringItem index="348" value="CARTAGO ALVARADO CAPELLADES"/>
+            <StringItem index="349" value="CARTAGO OREAMUNO SAN RAFAEL"/>
+            <StringItem index="350" value="CARTAGO OREAMUNO COT"/>
+            <StringItem index="351" value="CARTAGO OREAMUNO POTRERO CERRADO"/>
+            <StringItem index="352" value="CARTAGO OREAMUNO CIPRESES"/>
+            <StringItem index="353" value="CARTAGO OREAMUNO SANTA ROSA"/>
+            <StringItem index="354" value="CARTAGO EL GUARCO EL TEJAR"/>
+            <StringItem index="355" value="CARTAGO EL GUARCO SAN ISIDRO"/>
+            <StringItem index="356" value="CARTAGO EL GUARCO TOBOSI"/>
+            <StringItem index="357" value="CARTAGO EL GUARCO PATIO DE AGUA"/>
+            <StringItem index="358" value="ALAJUELA ALAJUELA ALAJUELA"/>
+            <StringItem index="359" value="ALAJUELA ALAJUELA SAN JOSE"/>
+            <StringItem index="360" value="ALAJUELA ALAJUELA CARRIZAL"/>
+            <StringItem index="361" value="ALAJUELA ALAJUELA SAN ANTONIO"/>
+            <StringItem index="362" value="ALAJUELA ALAJUELA GUACIMA"/>
+            <StringItem index="363" value="ALAJUELA ALAJUELA SAN ISIDRO"/>
+            <StringItem index="364" value="ALAJUELA ALAJUELA SABANILLA"/>
+            <StringItem index="365" value="ALAJUELA ALAJUELA SAN RAFAEL"/>
+            <StringItem index="366" value="ALAJUELA ALAJUELA RIO SEGUNDO"/>
+            <StringItem index="367" value="ALAJUELA ALAJUELA DESAMPARADOS"/>
+            <StringItem index="368" value="ALAJUELA ALAJUELA TURRUCARES"/>
+            <StringItem index="369" value="ALAJUELA ALAJUELA TAMBOR"/>
+            <StringItem index="370" value="ALAJUELA ALAJUELA LA GARITA"/>
+            <StringItem index="371" value="ALAJUELA ALAJUELA SAN MIGUEL DE SARAPIQUI"/>
+            <StringItem index="372" value="ALAJUELA SAN RAMON SAN RAMON"/>
+            <StringItem index="373" value="ALAJUELA SAN RAMON SANTIAGO"/>
+            <StringItem index="374" value="ALAJUELA SAN RAMON SAN JUAN"/>
+            <StringItem index="375" value="ALAJUELA SAN RAMON PIEDADES NORTE"/>
+            <StringItem index="376" value="ALAJUELA SAN RAMON PIEDADES SUR"/>
+            <StringItem index="377" value="ALAJUELA SAN RAMON SAN RAFAEL"/>
+            <StringItem index="378" value="ALAJUELA SAN RAMON SAN ISIDRO"/>
+            <StringItem index="379" value="ALAJUELA SAN RAMON ANGELES"/>
+            <StringItem index="380" value="ALAJUELA SAN RAMON ALFARO"/>
+            <StringItem index="381" value="ALAJUELA SAN RAMON VOLIO"/>
+            <StringItem index="382" value="ALAJUELA SAN RAMON CONCEPCION"/>
+            <StringItem index="383" value="ALAJUELA SAN RAMON ZAPOTAL"/>
+            <StringItem index="384" value="ALAJUELA SAN RAMON PE&#xd1;AS BLANCAS"/>
+            <StringItem index="385" value="ALAJUELA GRECIA GRECIA"/>
+            <StringItem index="386" value="ALAJUELA GRECIA SAN ISIDRO"/>
+            <StringItem index="387" value="ALAJUELA GRECIA SAN JOSE"/>
+            <StringItem index="388" value="ALAJUELA GRECIA SAN ROQUE"/>
+            <StringItem index="389" value="ALAJUELA GRECIA TACARES"/>
+            <StringItem index="390" value="ALAJUELA GRECIA RIO CUARTO"/>
+            <StringItem index="391" value="ALAJUELA GRECIA PUENTE DE PIEDRA"/>
+            <StringItem index="392" value="ALAJUELA GRECIA BOLIVAR"/>
+            <StringItem index="393" value="ALAJUELA SAN MATEO SAN MATEO"/>
+            <StringItem index="394" value="ALAJUELA SAN MATEO DESMONTE"/>
+            <StringItem index="395" value="ALAJUELA SAN MATEO JESUS MARIA"/>
+            <StringItem index="396" value="ALAJUELA ATENAS ATENAS"/>
+            <StringItem index="397" value="ALAJUELA ATENAS JESUS"/>
+            <StringItem index="398" value="ALAJUELA ATENAS MERCEDES"/>
+            <StringItem index="399" value="ALAJUELA ATENAS SAN ISIDRO"/>
+            <StringItem index="400" value="ALAJUELA ATENAS CONCEPCION"/>
+            <StringItem index="401" value="ALAJUELA ATENAS SAN JOSE"/>
+            <StringItem index="402" value="ALAJUELA ATENAS SANTA EULALIA"/>
+            <StringItem index="403" value="ALAJUELA NARANJO NARANJO"/>
+            <StringItem index="404" value="ALAJUELA NARANJO SAN MIGUEL"/>
+            <StringItem index="405" value="ALAJUELA NARANJO SAN JOSE"/>
+            <StringItem index="406" value="ALAJUELA NARANJO CIRRI SUR"/>
+            <StringItem index="407" value="ALAJUELA NARANJO SAN JERONIMO"/>
+            <StringItem index="408" value="ALAJUELA NARANJO SAN JUAN"/>
+            <StringItem index="409" value="ALAJUELA NARANJO ROSARIO"/>
+            <StringItem index="410" value="ALAJUELA PALMARES PALMARES"/>
+            <StringItem index="411" value="ALAJUELA PALMARES ZARAGOZA"/>
+            <StringItem index="412" value="ALAJUELA PALMARES BUENOS AIRES"/>
+            <StringItem index="413" value="ALAJUELA PALMARES SANTIAGO"/>
+            <StringItem index="414" value="ALAJUELA PALMARES CANDELARIA"/>
+            <StringItem index="415" value="ALAJUELA PALMARES ESQUIPULAS"/>
+            <StringItem index="416" value="ALAJUELA PALMARES GRANJA"/>
+            <StringItem index="417" value="ALAJUELA POAS SAN PEDRO"/>
+            <StringItem index="418" value="ALAJUELA POAS SAN JUAN"/>
+            <StringItem index="419" value="ALAJUELA POAS SAN RAFAEL"/>
+            <StringItem index="420" value="ALAJUELA POAS CARRILLOS"/>
+            <StringItem index="421" value="ALAJUELA POAS SABANA REDONDA"/>
+            <StringItem index="422" value="ALAJUELA OROTINA OROTINA"/>
+            <StringItem index="423" value="ALAJUELA OROTINA MASTATE"/>
+            <StringItem index="424" value="ALAJUELA OROTINA HACIENDA VIEJA"/>
+            <StringItem index="425" value="ALAJUELA OROTINA COYOLAR"/>
+            <StringItem index="426" value="ALAJUELA OROTINA CEIBA"/>
+            <StringItem index="427" value="ALAJUELA SAN CARLOS QUESADA"/>
+            <StringItem index="428" value="ALAJUELA SAN CARLOS FLORENCIA"/>
+            <StringItem index="429" value="ALAJUELA SAN CARLOS BUENAVISTA"/>
+            <StringItem index="430" value="ALAJUELA SAN CARLOS AGUAS ZARCAS"/>
+            <StringItem index="431" value="ALAJUELA SAN CARLOS VENECIA"/>
+            <StringItem index="432" value="ALAJUELA SAN CARLOS PITAL"/>
+            <StringItem index="433" value="ALAJUELA SAN CARLOS FORTUNA"/>
+            <StringItem index="434" value="ALAJUELA SAN CARLOS TIGRA"/>
+            <StringItem index="435" value="ALAJUELA SAN CARLOS PALMERA"/>
+            <StringItem index="436" value="ALAJUELA SAN CARLOS VENADO"/>
+            <StringItem index="437" value="ALAJUELA SAN CARLOS CUTRIS"/>
+            <StringItem index="438" value="ALAJUELA SAN CARLOS MONTERREY"/>
+            <StringItem index="439" value="ALAJUELA SAN CARLOS POCOSOL"/>
+            <StringItem index="440" value="ALAJUELA ALFARO RUIZ ZARCERO"/>
+            <StringItem index="441" value="ALAJUELA ALFARO RUIZ LAGUNA"/>
+            <StringItem index="442" value="ALAJUELA ALFARO RUIZ TAPEZCO"/>
+            <StringItem index="443" value="ALAJUELA ALFARO RUIZ GUADALUPE"/>
+            <StringItem index="444" value="ALAJUELA ALFARO RUIZ PALMIRA"/>
+            <StringItem index="445" value="ALAJUELA ALFARO RUIZ ZAPOTE"/>
+            <StringItem index="446" value="ALAJUELA ALFARO RUIZ BRISAS"/>
+            <StringItem index="447" value="ALAJUELA VALVERDE VEGA SARCHI NORTE"/>
+            <StringItem index="448" value="ALAJUELA VALVERDE VEGA SARCHI SUR"/>
+            <StringItem index="449" value="ALAJUELA VALVERDE VEGA TORO AMARILLO"/>
+            <StringItem index="450" value="ALAJUELA VALVERDE VEGA SAN PEDRO"/>
+            <StringItem index="451" value="ALAJUELA VALVERDE VEGA RODRIGUEZ"/>
+            <StringItem index="452" value="ALAJUELA UPALA UPALA"/>
+            <StringItem index="453" value="ALAJUELA UPALA AGUAS CLARAS"/>
+            <StringItem index="454" value="ALAJUELA UPALA SAN JOSE ( PIZOTE)"/>
+            <StringItem index="455" value="ALAJUELA UPALA BIJAGUA"/>
+            <StringItem index="456" value="ALAJUELA UPALA DELICIAS"/>
+            <StringItem index="457" value="ALAJUELA UPALA DOS RIOS"/>
+            <StringItem index="458" value="ALAJUELA UPALA YOLILLAL"/>
+            <StringItem index="459" value="ALAJUELA LOS CHILES LOS CHILES"/>
+            <StringItem index="460" value="ALAJUELA LOS CHILES CA&#xd1;O NEGRO"/>
+            <StringItem index="461" value="ALAJUELA LOS CHILES EL AMPARO"/>
+            <StringItem index="462" value="ALAJUELA LOS CHILES SAN JORGE"/>
+            <StringItem index="463" value="ALAJUELA GUATUSO SAN RAFAEL"/>
+            <StringItem index="464" value="ALAJUELA GUATUSO BUENAVISTA"/>
+            <StringItem index="465" value="ALAJUELA GUATUSO COTE"/>
           </StringArray>
         </Property>
       </Properties>
@@ -637,10 +959,217 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox13">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="6">
+            <StringItem index="0" value="Choose"/>
+            <StringItem index="1" value="RENOVACION"/>
+            <StringItem index="2" value="PORTABILIDAD"/>
+            <StringItem index="3" value="MIFI VENTA NUEVA"/>
+            <StringItem index="4" value="MOVIL VENTA NUEVA"/>
+            <StringItem index="5" value="MIGRACION"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField8">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel14">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="MONTO DEL SUBSIDIO *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField9">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField10">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="MONTO DE LA ORDEN PATRONAL *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel6">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="MODELO DEL TELEFONO *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox8">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="Choose"/>
+            <StringItem index="1" value="SI"/>
+            <StringItem index="2" value="NO"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel12">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="CLIENTE EXISTENTE *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel21">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="10" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="numero de tarjeta y fecha de vencimiento"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel18">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" id="Active Caption" palette="2" red="ff" type="palette"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="66" red="66" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="MOVIL"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel16">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="TIPO SIM *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox3">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="5">
+            <StringItem index="0" value="Choose"/>
+            <StringItem index="1" value="NORMAL"/>
+            <StringItem index="2" value="MICRO"/>
+            <StringItem index="3" value="NANO"/>
+            <StringItem index="4" value="NO REQUIERE SIM"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel11">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="PAQUETE SMS *"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox5">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="9">
+            <StringItem index="0" value="Choose"/>
+            <StringItem index="1" value="100 SMS"/>
+            <StringItem index="2" value="300 SMS"/>
+            <StringItem index="3" value="500 SMS"/>
+            <StringItem index="4" value="700 SMS"/>
+            <StringItem index="5" value="1000 SMS"/>
+            <StringItem index="6" value="3000 SMS"/>
+            <StringItem index="7" value="SIN PAQUETE"/>
+            <StringItem index="8" value=" "/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox12">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="15">
+            <StringItem index="0" value="Choose"/>
+            <StringItem index="1" value="PLUS 512 KBPS"/>
+            <StringItem index="2" value="PRO 1 MBPS"/>
+            <StringItem index="3" value="FULL 2 MBPS"/>
+            <StringItem index="4" value="GOLD 3 MBPS"/>
+            <StringItem index="5" value="PLATINO 4 MBPS"/>
+            <StringItem index="6" value="DIAMOND 5 MBPS"/>
+            <StringItem index="7" value="PLAN LTE 2 GB (120 Min - 1200 msm - 3 mbps)"/>
+            <StringItem index="8" value="PLAN LTE 5 GB (3000 Min - 1700 msm - 3 mbps)"/>
+            <StringItem index="9" value="PLAN LTE 8 GB (1250 Min - 2000 msm - 3 mbps)"/>
+            <StringItem index="10" value="CUENTA CONTROL 1"/>
+            <StringItem index="11" value="CUENTA CONTROL 2"/>
+            <StringItem index="12" value="CUENTA CONTROL 3"/>
+            <StringItem index="13" value="CUENTA CONTROL 4"/>
+            <StringItem index="14" value="CUENTA CONTROL 5"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel23">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="SEGMENTACION *"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox9">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="5">
+            <StringItem index="0" value="Choose"/>
+            <StringItem index="1" value="A"/>
+            <StringItem index="2" value="B"/>
+            <StringItem index="3" value="C"/>
+            <StringItem index="4" value="N/A"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField12">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel24">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="10" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Renta que tiene que pagar el cliente por mes"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="text" type="java.lang.String" value="SUBMIT"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

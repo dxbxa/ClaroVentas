@@ -5,21 +5,111 @@
  */
 package CapaVisual;
 
-import java.awt.Color;
+import CapaLogica.GestorLogico;
+import CapaLogica.VentaDTH;
+import CapaLogica.VentaGeneral;
+import java.awt.GraphicsEnvironment;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.ButtonGroup;
+import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+
+
 
 /**
  *
- * @author ymatamoros
+ * @author macBook
  */
-public class VVentaDTH extends javax.swing.JPanel {
+public class VVentaDTH extends javax.swing.JFrame {
 
+    GestorLogico GL_Principal;
+    int Padre=0;
     /**
-     * Creates new form VVentaDTH
+     * Creates new form VVentaDTH1
      */
-    public VVentaDTH() {
+    public VVentaDTH(GestorLogico pGLPrincipal,int pPadre,VentaGeneral VGeneral) {
+        Padre=pPadre;
+        GL_Principal=pGLPrincipal;
+        try { 
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); 
+        } catch (Exception ex) { 
+            System.out.println(ex); 
+        }
+        
         initComponents();
+        groupButton();
+        
+        pack();
+        
+        
+        
+        GraphicsEnvironment env =GraphicsEnvironment.getLocalGraphicsEnvironment();
+        this.setMaximizedBounds(env.getMaximumWindowBounds());
+        this.setExtendedState(this.getExtendedState() | this.MAXIMIZED_BOTH);
     }
+    
+    private void groupButton( ) {
 
+//        ButtonGroup bg1 = new ButtonGroup();
+//
+//        bg1.add(jRadioButton1);
+//        bg1.add(jRadioButton2);
+//        bg1.add(jRadioButton3);
+//        
+//        ButtonGroup bg2 = new ButtonGroup();
+//
+//        bg2.add(jRadioButton4);
+//        bg2.add(jRadioButton5);
+//        bg2.add(jRadioButton6);
+//        
+//        ButtonGroup bg3 = new ButtonGroup();
+//
+//        bg3.add(jRadioButton7);
+//        bg3.add(jRadioButton8);
+//        bg3.add(jRadioButton9);
+//        
+//        ButtonGroup bg4 = new ButtonGroup();
+//
+//        bg4.add(jRadioButton10);
+//        bg4.add(jRadioButton11);
+//        bg4.add(jRadioButton12);
+        
+        ButtonGroup bg5 = new ButtonGroup();
+
+        bg5.add(jRadioButton1);
+        bg5.add(jRadioButton4);
+        bg5.add(jRadioButton7);
+        bg5.add(jRadioButton10);
+        
+        ButtonGroup bg6 = new ButtonGroup();
+
+        bg6.add(jRadioButton2);
+        bg6.add(jRadioButton5);
+        bg6.add(jRadioButton8);
+        bg6.add(jRadioButton11);
+        
+        ButtonGroup bg7 = new ButtonGroup();
+
+        bg7.add(jRadioButton3);
+        bg7.add(jRadioButton6);
+        bg7.add(jRadioButton9);
+        bg7.add(jRadioButton12);
+        
+        ButtonGroup bg8 = new ButtonGroup();
+        bg8.add(jRadioButton13);
+        bg8.add(jRadioButton14);
+        
+        ButtonGroup bg9 = new ButtonGroup();
+        bg9.add(jRadioButton15);
+        bg9.add(jRadioButton16);
+//        ButtonGroup bg2 = new ButtonGroup();
+//        bg2.add(jRadioButton7);
+//        bg2.add(jRadioButton8);
+        
+
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -29,20 +119,12 @@ public class VVentaDTH extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel7 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jTextField6 = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jLabel4 = new javax.swing.JLabel();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
         jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jCheckBox12 = new javax.swing.JCheckBox();
         jCheckBox9 = new javax.swing.JCheckBox();
@@ -58,6 +140,8 @@ public class VVentaDTH extends javax.swing.JPanel {
         jCheckBox18 = new javax.swing.JCheckBox();
         jCheckBox19 = new javax.swing.JCheckBox();
         jCheckBox15 = new javax.swing.JCheckBox();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jRadioButton12 = new javax.swing.JRadioButton();
         jLabel12 = new javax.swing.JLabel();
@@ -79,50 +163,26 @@ public class VVentaDTH extends javax.swing.JPanel {
         jRadioButton4 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jRadioButton13 = new javax.swing.JRadioButton();
+        jRadioButton14 = new javax.swing.JRadioButton();
+        jRadioButton15 = new javax.swing.JRadioButton();
+        jRadioButton16 = new javax.swing.JRadioButton();
+        jTextField1 = new javax.swing.JTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel7.setText("RENTA A PAGAR *");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("NUMERO DE BURRO *");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel18.setBackground(java.awt.SystemColor.activeCaption);
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(102, 102, 255));
-        jLabel18.setText("DTH");
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel3.setForeground(java.awt.Color.red);
-        jLabel3.setText("Requerido*");
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("ANTICIPO *");
-
-        jCheckBox1.setText("SI");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
-
-        jCheckBox2.setText("NO");
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("DONDE FIRMA INSTALA *");
-
-        jCheckBox3.setText("SI");
-        jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox3ActionPerformed(evt);
-            }
-        });
-
-        jCheckBox4.setText("NO");
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "DTH", "CASA CLARO DOBLE ( TV + INTERNET )", "CASA CLARO DOBLE ( TV + TELEFONIA )", "CASA CLARO DOBLE ( TV + INTERNET + TELEFONIA )" }));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("TIPO DE PRODUCTO *");
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel7.setText("RENTA A PAGAR *");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("ADCICIONALES *"));
         jPanel1.setForeground(java.awt.Color.gray);
@@ -257,6 +317,12 @@ public class VVentaDTH extends javax.swing.JPanel {
                 .addContainerGap(43, Short.MAX_VALUE))
         );
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setText("ANTICIPO *");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setText("DONDE FIRMA INSTALA *");
+
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("ESQUEMA DE CONTRATACION"));
 
         jRadioButton12.setToolTipText("");
@@ -389,39 +455,71 @@ public class VVentaDTH extends javax.swing.JPanel {
         );
 
         jButton1.setText("SUBMIT");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel6.setForeground(java.awt.Color.red);
+        jLabel6.setText("*requerido");
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel8.setText("DTH");
+
+        jRadioButton13.setText("SI");
+        jRadioButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton13ActionPerformed(evt);
+            }
+        });
+
+        jRadioButton14.setText("NO");
+
+        jRadioButton15.setText("SI");
+        jRadioButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton15ActionPerformed(evt);
+            }
+        });
+
+        jRadioButton16.setText("Other :");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 1112, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(jLabel1))
                             .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(77, 77, 77)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(44, 44, 44)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jCheckBox1)
-                                .addComponent(jCheckBox2)))
-                        .addGap(67, 67, 67)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jRadioButton13)
+                                .addComponent(jRadioButton14)))
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jCheckBox3)
-                                .addComponent(jCheckBox4))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton1)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(61, 61, 61)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jRadioButton16)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jRadioButton15)))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLabel8)
+                        .addComponent(jLabel6)))
+                .addGap(28, 61, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
@@ -432,33 +530,34 @@ public class VVentaDTH extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel7)
                             .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(11, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(28, 28, 28)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
+                .addComponent(jLabel6)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel8)
+                .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox1)
+                        .addComponent(jRadioButton13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox2))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jRadioButton14)
+                            .addComponent(jRadioButton16)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jCheckBox4))
+                        .addComponent(jRadioButton15))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -467,43 +566,43 @@ public class VVentaDTH extends javax.swing.JPanel {
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(70, 70, 70)
+                .addGap(64, 64, 64)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
+
+        jPanel1.getAccessibleContext().setAccessibleName("ADICICIONALES *");
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
-
-    private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox3ActionPerformed
-
-    private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox5ActionPerformed
-
-    private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox7ActionPerformed
-
-    private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox9ActionPerformed
 
     private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox12ActionPerformed
 
+    private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox9ActionPerformed
+
+    private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox7ActionPerformed
+
+    private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox5ActionPerformed
+
     private void jCheckBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox14ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox14ActionPerformed
+
+    private void jCheckBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox20ActionPerformed
 
     private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox16ActionPerformed
         // TODO add your handling code here:
@@ -513,14 +612,138 @@ public class VVentaDTH extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox18ActionPerformed
 
-    private void jCheckBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox20ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+         String anticipoVal = "";
+        if(jRadioButton15.isSelected()){
+            anticipoVal = jRadioButton1.getText();
+        }
+        if(jRadioButton16.isSelected()){
+            anticipoVal = jRadioButton2.getText();
+        }
+        String dondeFirmaInstalaVal = "";
+        if(jRadioButton13.isSelected()){
+            dondeFirmaInstalaVal = jRadioButton1.getText();
+        }
+        if(jRadioButton14.isSelected()){
+            dondeFirmaInstalaVal = jRadioButton2.getText();
+        }
+        String numeroBurro = jTextField6.getText();
+        String anticipo = anticipoVal;
+        String dondeFirmaInstala = dondeFirmaInstalaVal;
+        String tipoProducto = jComboBox1.getSelectedItem().toString();
+        double rentaPagar = Double.parseDouble(jTextField7.getText());
+        String[] adicionalesVal = new String[14];
+        
+        if(jCheckBox7.isSelected()){
+            adicionalesVal[0]=jCheckBox7.getText();
+        }
+        if(jCheckBox12.isSelected()){
+            adicionalesVal[1]=jCheckBox12.getText();
+        }
+        if(jCheckBox5.isSelected()){
+            adicionalesVal[2]=jCheckBox5.getText();
+        }
+        if(jCheckBox6.isSelected()){
+            adicionalesVal[3]=jCheckBox6.getText();
+        }
+        if(jCheckBox13.isSelected()){
+            adicionalesVal[4]=jCheckBox13.getText();
+        }
+        if(jCheckBox14.isSelected()){
+            adicionalesVal[5]=jCheckBox14.getText();
+        }
+        if(jCheckBox15.isSelected()){
+            adicionalesVal[6]=jCheckBox15.getText();
+        }
+        if(jCheckBox16.isSelected()){
+            adicionalesVal[7]=jCheckBox16.getText();
+        }
+        if(jCheckBox19.isSelected()){
+            adicionalesVal[8]=jCheckBox19.getText();
+        }
+        if(jCheckBox20.isSelected()){
+            adicionalesVal[9]=jCheckBox20.getText();
+        }
+        if(jCheckBox21.isSelected()){
+            adicionalesVal[10]=jCheckBox21.getText();
+        }
+        if(jCheckBox8.isSelected()){
+            adicionalesVal[11]=jCheckBox8.getText();
+        }
+        if(jCheckBox9.isSelected()){
+            adicionalesVal[12]=jCheckBox9.getText();
+        }
+        if(jCheckBox18.isSelected()){
+            adicionalesVal[13]=jCheckBox18.getText();
+        }
+        StringBuilder adicionales = new StringBuilder();
+        for (int i = 0; i < adicionalesVal.length; i++) {
+            if(adicionalesVal[i]!=null){
+                if(adicionales.toString().equals("")){
+                    adicionales.append(adicionalesVal[i]);
+                }else{
+                    adicionales.append(","+adicionalesVal[i]);
+                }
+            }
+        }
+        
+        String esquemaContratacionA = "";
+        if(jRadioButton1.isSelected()){
+            esquemaContratacionA = jRadioButton1.getText();
+        }
+        if(jRadioButton4.isSelected()){
+            esquemaContratacionA = jRadioButton4.getText();
+        }
+        if(jRadioButton7.isSelected()){
+            esquemaContratacionA = jRadioButton7.getText();
+        }
+        if(jRadioButton10.isSelected()){
+            esquemaContratacionA = jRadioButton10.getText();
+        }
+        
+        String esquemaContratacionB = "";
+        if(jRadioButton2.isSelected()){
+            esquemaContratacionB = jRadioButton2.getText();
+        }
+        if(jRadioButton5.isSelected()){
+            esquemaContratacionB = jRadioButton5.getText();
+        }
+        if(jRadioButton8.isSelected()){
+            esquemaContratacionB = jRadioButton8.getText();
+        }
+        if(jRadioButton11.isSelected()){
+            esquemaContratacionB = jRadioButton11.getText();
+        }
+        
+        String esquemaContratacionC = "";
+        if(jRadioButton3.isSelected()){
+            esquemaContratacionC = jRadioButton3.getText();
+        }
+        if(jRadioButton6.isSelected()){
+            esquemaContratacionC = jRadioButton6.getText();
+        }
+        if(jRadioButton9.isSelected()){
+            esquemaContratacionC = jRadioButton9.getText();
+        }
+        if(jRadioButton12.isSelected()){
+            esquemaContratacionC = jRadioButton12.getText();
+        }
+        
+        VentaDTH ventaDTH =  GL_Principal.VentaDTH(numeroBurro, anticipo, dondeFirmaInstala, tipoProducto, rentaPagar, adicionales.toString(), esquemaContratacionA, esquemaContratacionB, esquemaContratacionC);
+        GL_Principal.Regresar_DTH(1);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jRadioButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton13ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox20ActionPerformed
+    }//GEN-LAST:event_jRadioButton13ActionPerformed
+
+    private void jRadioButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton15ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox12;
     private javax.swing.JCheckBox jCheckBox13;
     private javax.swing.JCheckBox jCheckBox14;
@@ -528,11 +751,8 @@ public class VVentaDTH extends javax.swing.JPanel {
     private javax.swing.JCheckBox jCheckBox16;
     private javax.swing.JCheckBox jCheckBox18;
     private javax.swing.JCheckBox jCheckBox19;
-    private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox20;
     private javax.swing.JCheckBox jCheckBox21;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JCheckBox jCheckBox5;
     private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JCheckBox jCheckBox7;
@@ -546,12 +766,12 @@ public class VVentaDTH extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -559,6 +779,10 @@ public class VVentaDTH extends javax.swing.JPanel {
     private javax.swing.JRadioButton jRadioButton10;
     private javax.swing.JRadioButton jRadioButton11;
     private javax.swing.JRadioButton jRadioButton12;
+    private javax.swing.JRadioButton jRadioButton13;
+    private javax.swing.JRadioButton jRadioButton14;
+    private javax.swing.JRadioButton jRadioButton15;
+    private javax.swing.JRadioButton jRadioButton16;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
@@ -567,6 +791,7 @@ public class VVentaDTH extends javax.swing.JPanel {
     private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables

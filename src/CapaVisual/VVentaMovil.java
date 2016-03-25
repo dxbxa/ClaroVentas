@@ -5,17 +5,41 @@
  */
 package CapaVisual;
 
+import CapaLogica.GestorLogico;
+import CapaLogica.VentaGeneral;
+import CapaLogica.VentaMovil;
+import java.awt.GraphicsEnvironment;
+import javax.swing.UIManager;
+
 /**
  *
- * @author ymatamoros
+ * @author macBook
  */
-public class VVentaMovil extends javax.swing.JPanel {
+public class VVentaMovil extends javax.swing.JFrame {
 
+    GestorLogico GL_Principal;
+    int Padre=0;
     /**
-     * Creates new form VVentaMovil
+     * Creates new form VVentaProducto1
      */
-    public VVentaMovil() {
+    public VVentaMovil(GestorLogico pGLPrincipal,int pPadre,VentaGeneral VGeneral) {
+        Padre=pPadre;
+        GL_Principal=pGLPrincipal;
+        try { 
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel"); 
+        } catch (Exception ex) { 
+            System.out.println(ex); 
+        }
+        
         initComponents();
+        
+        pack();
+        
+        
+        
+        GraphicsEnvironment env =GraphicsEnvironment.getLocalGraphicsEnvironment();
+        this.setMaximizedBounds(env.getMaximumWindowBounds());
+        this.setExtendedState(this.getExtendedState() | this.MAXIMIZED_BOTH);
     }
 
     /**
@@ -27,131 +51,78 @@ public class VVentaMovil extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel18 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jLabel7 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jLabel8 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jLabel9 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<>();
-        jLabel10 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox<>();
-        jComboBox7 = new javax.swing.JComboBox<>();
-        jLabel11 = new javax.swing.JLabel();
-        jComboBox8 = new javax.swing.JComboBox<>();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jComboBox9 = new javax.swing.JComboBox<>();
-        jLabel14 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
-        jComboBox10 = new javax.swing.JComboBox<>();
-        jLabel31 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jLabel19 = new javax.swing.JLabel();
-        jComboBox11 = new javax.swing.JComboBox<>();
         jLabel20 = new javax.swing.JLabel();
         jTextField13 = new javax.swing.JTextField();
-        jLabel21 = new javax.swing.JLabel();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jLabel10 = new javax.swing.JLabel();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox11 = new javax.swing.JComboBox<>();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jComboBox13 = new javax.swing.JComboBox<>();
+        jTextField8 = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jComboBox8 = new javax.swing.JComboBox<>();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jLabel11 = new javax.swing.JLabel();
+        jComboBox5 = new javax.swing.JComboBox<>();
+        jComboBox12 = new javax.swing.JComboBox<>();
+        jLabel23 = new javax.swing.JLabel();
+        jComboBox9 = new javax.swing.JComboBox<>();
+        jTextField12 = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
-        jLabel18.setBackground(java.awt.SystemColor.activeCaption);
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(102, 102, 255));
-        jLabel18.setText("DTH");
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel3.setForeground(java.awt.Color.red);
-        jLabel3.setText("Requerido*");
+        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel20.setText("INFORMACION DE LA TARJETA");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("NOMBRE DE LA EMPRESA QUE TRABAJA *");
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("PROVINCIA, CANTON Y DISTRITO DEL TRABAJO *");
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel4.setText("DIRECCION EXACTA DEL TRABAJO *");
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel5.setText("MONTO DE LA ORDEN PATRONAL *");
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel6.setText("MODELO DEL TELEFONO *");
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel7.setText("TIPO DE SIM *");
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel8.setText("PAQUETE DE MINUTOS *");
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel9.setText("PAQUETE SMS *");
-
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "PLANES FINANCIADOS", "CUENTA CONTROL", "PLANES LIMITADOS", "PLANES LTE", "PLANES A TU MEDIDA", "PLAN IPHONE 1 (RENOVACION)", "PLAN IPHONE 2 (RENOVACION)", "MI PRIMER CLARO", "SMATRTPHONE 3", "DATA CARD" }));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel10.setText("PLAN PROPUESTO *");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "60 MINUTOS", "120 MINUTOS", "180 MINUTOS", "360 MINUTOS", "600 MINUTOS", "1000 MINUTOS", "2500 MINUTOS", "SIN PAQUETE" }));
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel11.setText("SEGMENTACION *");
-
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel12.setText("CLIENTE EXISTENTE *");
-
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel13.setText("PAQUETE DE DATOS *");
-
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel14.setText("MONTO DEL SUBSIDIO *");
-
-        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel15.setText("RENTA ANTERIOR (para renovacion) *");
-
-        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel16.setText("RENTA ACTUAL *");
+        jLabel31.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel31.setText("SIN FRONTERA NORTEAMERICANA *");
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel17.setText("RENTA ACTUAL *");
 
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel8.setText("PAQUETE DE MINUTOS *");
 
-        jLabel31.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel31.setText("SIN FRONTERA NORTEAMERICANA *");
+        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel19.setText("FORMA DE PAGO *");
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "AZUMI A35S NEGRO", "Alcatel Pixi3 3.5 Black", "GEMALTO", "Huawei Mate 7 Negro", "Huawei Mate 7 Negro LTD(D)", "Huawei P8 Gris Titaneo", "Huawei P8 Gris Titaneo(D)", "Huawei Y3 Negro", "Huawei Y520", "Huawei Y520 Negro", "Iphone 5 S Silver 16GB(D)", "Iphone 5 S Space Gray 16GB(D)", "Iphone 6 Plus Space Gray 16GB(D)", "Iphone 6 Space Gray 64GB(D)", "Iphone 6 S Space Gray 16GB(D)", "Iphone 6 Space Gray 16GB(D)", "Iphone 6 S Space Gray 16GB", "Iphone 6 S Silver Gray 16GB", "Iphone 6 S Silver 64GB", "Iphone 6 S Silver Gray 64GB(D)", "LG C70 Spirit Negro", "LG G4 Negro", "LG G4 Stylus Titan", "M4 4045 Grafito", "M4 4045 XT", "M4 In Touch SS4040 Grafito(D)", "M4 SS4045 Grafito(D)", "M4 SS Love 4045", "Modem Huawei E 3531 S6(D)", "Modem Huawei E 3531 S-6(D)", "Modem Huawei E 5330 BS-6(D)", "Samsung Ace 4 Lite Negro (D)", "Samsung Ace 4 Neo Negro (D)", "Samsung Ace Neo Blanco", "Samsung  Core 2 Negro(D)", "Samsung GLX Ace 4 Neo", "Samsung GLX Note 5 SM-N920G Negro", "Samsung GLX S6 32GB G9201 Black(D)", "Samsung GLX S6 64GB G9201 Black(D)", "Samsung J5 Negro", "Samsung J7 Blanco", "Samsung J7 Negro", "Samsung J1 Ace Blanco(D)", "Samsung J1 Ace Negro(D)", "Samsung Ace 4 Neo Blanco (D)", "Sony Xperia E4 Negro(D)", "Sony Xperia Z5 Negro", "NYX Fenix Negro(D)" }));
+
+        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "TARJETA", "EFECTIVO", "NO REQUIERE PAGO" }));
 
         jCheckBox1.setText("ACEPTA PLAN");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -162,42 +133,91 @@ public class VVentaMovil extends javax.swing.JPanel {
 
         jCheckBox2.setText("NO ACEPTA PLAN");
 
-        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel19.setText("FORMA DE PAGO *");
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel3.setForeground(java.awt.Color.red);
+        jLabel3.setText("Requerido*");
 
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
+        jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel15.setText("RENTA ANTERIOR (para renovacion) *");
 
-        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel20.setText("INFORMACION DE LA TARJETA");
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel1.setText("NOMBRE DE LA EMPRESA QUE TRABAJA *");
 
-        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel21.setText("numero de tarjeta y fecha de vencimiento");
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setText("DIRECCION EXACTA DEL TRABAJO *");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setText("PROVINCIA, CANTON Y DISTRITO DEL TRABAJO *");
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel22.setText("TIPO DE VENTA *");
 
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "Item 2", "Item 3", "Item 4" }));
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel13.setText("PAQUETE DE DATOS *");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "SAN JOSE CENTRAL CARMEN (NE)", "SAN JOSE CENTRAL MERCED (NO)", "SAN JOSE CENTRAL Division ", "SAN JOSE CENTRAL CATEDRAL (SE)", "SAN JOSE CENTRAL ZAPOTE", "SAN JOSE CENTRAL SAN FCO. 2 RIOS", "SAN JOSE CENTRAL URUCA", "SAN JOSE CENTRAL MATA REDONDA", "SAN JOSE CENTRAL PAVAS", "SAN JOSE CENTRAL HATILLO", "SAN JOSE CENTRAL SAN SEBASTIAN", "SAN JOSE ESCAZU ESCAZU", "SAN JOSE ESCAZU SAN ANTONIO", "SAN JOSE ESCAZU SAN RAFAEL", "SAN JOSE DESAMPARADOS DESAMPARADOS", "SAN JOSE DESAMPARADOS SAN MIGUEL", "SAN JOSE DESAMPARADOS SAN JUAN DE DIOS", "SAN JOSE DESAMPARADOS SAN RAFAEL ARRIBA", "SAN JOSE DESAMPARADOS SAN ANTONIO", "SAN JOSE DESAMPARADOS FRAILES", "SAN JOSE DESAMPARADOS PATARRA", "SAN JOSE DESAMPARADOS SAN CRISTOBAL", "SAN JOSE DESAMPARADOS ROSARIO", "SAN JOSE DESAMPARADOS DAMAS", "SAN JOSE DESAMPARADOS SAN RAFAEL ABAJO", "SAN JOSE DESAMPARADOS GRAVILIAS", "SAN JOSE PURISCAL SANTIAGO", "SAN JOSE PURISCAL MERCEDES SUR", "SAN JOSE PURISCAL BARBACOAS", "SAN JOSE PURISCAL GRIFO ALTO", "SAN JOSE PURISCAL SAN RAFAEL", "SAN JOSE PURISCAL CANDELARITA", "SAN JOSE PURISCAL DESAMPARADITOS", "SAN JOSE PURISCAL SAN ANTONIO", "SAN JOSE PURISCAL CHIRES", "SAN JOSE TARRAZU SAN MARCOS", "SAN JOSE TARRAZU SAN LORENZO", "SAN JOSE TARRAZU SAN CARLOS", "SAN JOSE ASERRI ASERRI", "SAN JOSE ASERRI TARBACA", "SAN JOSE ASERRI VUELTA DE JORCO", "SAN JOSE ASERRI SAN GABRIEL", "SAN JOSE ASERRI LA LEGUA", "SAN JOSE ASERRI MONTERREY", "SAN JOSE ASERRI SALITRILLOS", "SAN JOSE MORA COLON", "SAN JOSE MORA GUAYABO", "SAN JOSE MORA TABARCIA", "SAN JOSE MORA PIEDRAS NEGRAS", "SAN JOSE MORA PICAGRES", "SAN JOSE GOICOECHEA GUADALUPE", "SAN JOSE GOICOECHEA SAN FRANCISCO", "SAN JOSE GOICOECHEA CALLE BLANCOS", "SAN JOSE GOICOECHEA MATA DE PLATANO", "SAN JOSE GOICOECHEA IPIS", "SAN JOSE GOICOECHEA RANCHO REDONDO", "SAN JOSE GOICOECHEA PURRAL", "SAN JOSE SANTA ANA SANTA ANA", "SAN JOSE SANTA ANA SALITRAL", "SAN JOSE SANTA ANA POZOS", "SAN JOSE SANTA ANA URUCA", "SAN JOSE SANTA ANA PIEDADES", "SAN JOSE SANTA ANA BRASIL", "SAN JOSE ALAJUELITA ALAJUELITA", "SAN JOSE ALAJUELITA SAN JOSECITO", "SAN JOSE ALAJUELITA SAN ANTONIO", "SAN JOSE ALAJUELITA CONCEPCION", "SAN JOSE ALAJUELITA SAN FELIPE", "SAN JOSE CORONADO SAN ISIDRO", "SAN JOSE CORONADO SAN RAFAEL", "SAN JOSE CORONADO DULCE NOMBRE DE JESUS", "SAN JOSE CORONADO PATALILLO", "SAN JOSE CORONADO CASCAJAL", "SAN JOSE ACOSTA SAN IGNACIO", "SAN JOSE ACOSTA GUAITIL", "SAN JOSE ACOSTA PALMICHAL", "SAN JOSE ACOSTA CANGREJAL", "SAN JOSE ACOSTA SABANILLAS", "SAN JOSE TIBAS SAN JUAN", "SAN JOSE TIBAS CINCO ESQUINAS", "SAN JOSE TIBAS ANSELMO LLORENTE", "SAN JOSE TIBAS LEON XIII", "SAN JOSE TIBAS COLIMA", "SAN JOSE MORAVIA SAN VICENTE", "SAN JOSE MORAVIA SAN JERONIMO", "SAN JOSE MORAVIA TRINIDAD", "SAN JOSE MONTES DE OCA SAN PEDRO", "SAN JOSE MONTES DE OCA SABANILLA", "SAN JOSE MONTES DE OCA MERCEDES", "SAN JOSE MONTES DE OCA SAN RAFAEL", "SAN JOSE TURRUBARES SAN PABLO", "SAN JOSE TURRUBARES SAN PEDRO", "SAN JOSE TURRUBARES SAN JUAN DE MATA // CARARA", "SAN JOSE TURRUBARES SAN LUIS", "SAN JOSE DOTA SANTA MARIA", "SAN JOSE DOTA JARDIN", "SAN JOSE DOTA COPEY", "SAN JOSE CURRIDABAT CURRIDABAT", "SAN JOSE CURRIDABAT GRANADILLA", "SAN JOSE CURRIDABAT SANCHEZ", "SAN JOSE CURRIDABAT TIRRASES", "SAN JOSE PEREZ ZELEDON SAN ISIDRO", "SAN JOSE PEREZ ZELEDON GENERAL", "SAN JOSE PEREZ ZELEDON DANIEL FLORES", "SAN JOSE PEREZ ZELEDON RIVAS", "SAN JOSE PEREZ ZELEDON SAN PEDRO", "SAN JOSE PEREZ ZELEDON PLATANARES", "SAN JOSE PEREZ ZELEDON PEJIBAYE", "SAN JOSE PEREZ ZELEDON CAJON", "SAN JOSE PEREZ ZELEDON BARU", "SAN JOSE PEREZ ZELEDON RIO NUEVO", "SAN JOSE PEREZ ZELEDON PARAMO", "SAN JOSE LEON CORTES SAN PABLO", "SAN JOSE LEON CORTES SAN ANDRES", "SAN JOSE LEON CORTES LLANO BONITO", "SAN JOSE LEON CORTES SAN ISIDRO", "SAN JOSE LEON CORTES SANTA CRUZ", "SAN JOSE LEON CORTES SAN ANTONIO", "PUNTARENAS PUNTARENAS PUNTARENAS", "PUNTARENAS PUNTARENAS PITAHAYA", "PUNTARENAS PUNTARENAS CHOMES", "PUNTARENAS PUNTARENAS LEPANTO", "PUNTARENAS PUNTARENAS PAQUERA", "PUNTARENAS PUNTARENAS MANZANILLO", "PUNTARENAS PUNTARENAS GUACIMAL", "PUNTARENAS PUNTARENAS BARRANCA", "PUNTARENAS PUNTARENAS MONTE VERDE", "PUNTARENAS PUNTARENAS ISLA DEL CORO", "PUNTARENAS PUNTARENAS COBANO", "PUNTARENAS PUNTARENAS CHACARITA", "PUNTARENAS PUNTARENAS CHIRA", "PUNTARENAS PUNTARENAS ACAPULCO", "PUNTARENAS PUNTARENAS EL ROBLE", "PUNTARENAS PUNTARENAS ARANCIBIA", "PUNTARENAS ESPARZA ESPIRITU SANTO", "PUNTARENAS ESPARZA SAN JUAN GRANDE", "PUNTARENAS ESPARZA MACACONA", "PUNTARENAS ESPARZA SAN RAFAEL", "PUNTARENAS ESPARZA SAN JERONIMO", "PUNTARENAS BUENOS AIRES BUENOS AIRES", "PUNTARENAS BUENOS AIRES VOLCAN", "PUNTARENAS BUENOS AIRES POTRERO GRANDE", "PUNTARENAS BUENOS AIRES BORUCA", "PUNTARENAS BUENOS AIRES PILAS", "PUNTARENAS BUENOS AIRES COLINAS", "PUNTARENAS BUENOS AIRES CHANGUENA", "PUNTARENAS BUENOS AIRES BIOLLEY", "PUNTARENAS BUENOS AIRES BRUNKA", "PUNTARENAS MONTES DE ORO MIRAMAR", "PUNTARENAS MONTES DE ORO UNION", "PUNTARENAS MONTES DE ORO SAN ISIDRO", "PUNTARENAS OSA CORTES", "PUNTARENAS OSA PALMAR", "PUNTARENAS OSA SIERPE", "PUNTARENAS OSA BAHIA BALLENA", "PUNTARENAS OSA PIEDRAS BLANCAS", "PUNTARENAS AGUIRRE QUEPOS", "PUNTARENAS AGUIRRE SAVEGRE", "PUNTARENAS AGUIRRE NARANJITO", "PUNTARENAS GOLFITO GOLFITO", "PUNTARENAS GOLFITO JIMENEZ", "PUNTARENAS GOLFITO GUAYCARA", "PUNTARENAS GOLFITO PAVON / PAVONES", "PUNTARENAS COTO BRUS SAN VITO", "PUNTARENAS COTO BRUS SABALITO", "PUNTARENAS COTO BRUS AGUA BUENA", "PUNTARENAS COTO BRUS LIMONCITO", "PUNTARENAS COTO BRUS PITTIER", "PUNTARENAS PARRITA PARRITA", "PUNTARENAS CORREDORES CORREDOR", "PUNTARENAS CORREDORES LA CUESTA", "PUNTARENAS CORREDORES CANOAS", "PUNTARENAS CORREDORES LAUREL", "PUNTARENAS GARABITO JACO", "PUNTARENAS GARABITO TARCOLES", "LIMON LIMON LIMON", "LIMON LIMON VALLE LA ESTRELLA", "LIMON LIMON LIVERPOOL", "LIMON LIMON MATAMA", "LIMON POCOCI GUAPILES", "LIMON POCOCI JIMENEZ", "LIMON POCOCI RITA", "LIMON POCOCI ROXANA", "LIMON POCOCI CARIARI", "LIMON POCOCI COLORADO", "LIMON SIQUIRRES SIQUIRRES", "LIMON SIQUIRRES PACUARITO", "LIMON SIQUIRRES FLORIDA", "LIMON SIQUIRRES GERMANIA", "LIMON SIQUIRRES CAIRO", "LIMON SIQUIRRES ALEGRIA", "LIMON TALAMANCA BRATSI", "LIMON TALAMANCA SIXAOLA", "LIMON TALAMANCA CAHUITA", "LIMON MATINA MATINA", "LIMON MATINA BATAN", "LIMON MATINA CARRANDI", "LIMON GUACIMO GUACIMO", "LIMON GUACIMO MERCEDES", "LIMON GUACIMO POCORA", "LIMON GUACIMO RIO JIMENEZ", "LIMON GUACIMO DUACARI", "HEREDIA HEREDIA HEREDIA", "HEREDIA HEREDIA MERCEDES", "HEREDIA HEREDIA SAN FRANCISCO", "HEREDIA HEREDIA ULLOA", "HEREDIA HEREDIA VARABLANCA", "HEREDIA BARVA BARVA", "HEREDIA BARVA SAN PEDRO", "HEREDIA BARVA SAN PABLO", "HEREDIA BARVA SAN ROQUE", "HEREDIA BARVA SANTA LUCIA", "HEREDIA BARVA SAN JOSE DE LA MONTAÑA", "HEREDIA SANTO DOMINGO SANTO DOMINGO", "HEREDIA SANTO DOMINGO SAN VICENTE", "HEREDIA SANTO DOMINGO SAN MIGUEL", "HEREDIA SANTO DOMINGO PARACITO", "HEREDIA SANTO DOMINGO SANTO TOMAS", "HEREDIA SANTO DOMINGO SANTO ROSA", "HEREDIA SANTO DOMINGO TURES", "HEREDIA SANTO DOMINGO PARA", "HEREDIA SANTA BARBARA SANTA BARBARA", "HEREDIA SANTA BARBARA SAN PEDRO", "HEREDIA SANTA BARBARA SAN JUAN", "HEREDIA SANTA BARBARA JESUS", "HEREDIA SANTA BARBARA SANTO DOMINGO", "HEREDIA SANTA BARBARA PURABA", "HEREDIA SAN RAFAEL SAN RAFAEL", "HEREDIA SAN RAFAEL SAN JOSECITO", "HEREDIA SAN RAFAEL SANTIAGO", "HEREDIA SAN RAFAEL LOS ANGELES", "HEREDIA SAN RAFAEL CONCEPCION", "HEREDIA SAN ISIDRO SAN ISIDRO", "HEREDIA SAN ISIDRO SAN JOSE", "HEREDIA SAN ISIDRO CONCEPCION", "HEREDIA SAN ISIDRO SAN FRANCISCO", "HEREDIA BELEN SAN ANTONIO", "HEREDIA BELEN LA RIBERA", "HEREDIA BELEN ASUNCION", "HEREDIA FLORES SAN JOAQUIN", "HEREDIA FLORES BARRANTES", "HEREDIA FLORES LLORENTE", "HEREDIA SAN PABLO SAN PABLO", "HEREDIA SARAPIQUI PUERTO VIEJO", "HEREDIA SARAPIQUI LA VIRGEN", "HEREDIA SARAPIQUI HORQUETAS", "HEREDIA SARAPIQUI LLANURAS DEL GASPAR", "HEREDIA SARAPIQUI CUREÑA", "GUANACASTE LIBERIA LIBERIA", "GUANACASTE LIBERIA CAÑAS DULCES", "GUANACASTE LIBERIA MAYORGA", "GUANACASTE LIBERIA NACASCOLO", "GUANACASTE LIBERIA CURUBANDE", "GUANACASTE NICOYA NICOYA", "GUANACASTE NICOYA MANSION", "GUANACASTE NICOYA SAN ANTONIO", "GUANACASTE NICOYA QUEBRADA HONDA", "GUANACASTE NICOYA SAMARA", "GUANACASTE NICOYA NOSARA", "GUANACASTE NICOYA BELEN DE NOSARITA", "GUANACASTE SANTA CRUZ SANTA CRUZ", "GUANACASTE SANTA CRUZ BOLSON", "GUANACASTE SANTA CRUZ VEINTISIETE DE ABRIL 27 D", "GUANACASTE SANTA CRUZ TEMPATE", "GUANACASTE SANTA CRUZ CARTAGENA", "GUANACASTE SANTA CRUZ CUAJINIQUIL", "GUANACASTE SANTA CRUZ DIRIA", "GUANACASTE SANTA CRUZ CABO VELAS", "GUANACASTE SANTA CRUZ TAMARINDO", "GUANACASTE BAGACES BAGACES", "GUANACASTE BAGACES FORTUNA", "GUANACASTE BAGACES MOGOTE", "GUANACASTE BAGACES RIO NARANJO", "GUANACASTE CARRILLO FILADELFIA", "GUANACASTE CARRILLO PALMIRA", "GUANACASTE CARRILLO SARDINAL", "GUANACASTE CARRILLO BELEN", "GUANACASTE CAÑAS CAÑAS", "GUANACASTE CAÑAS PALMIRA", "GUANACASTE CAÑAS SAN MIGUEL", "GUANACASTE CAÑAS BEBEDERO", "GUANACASTE CAÑAS POROSAL", "GUANACASTE ABANGARES LAS JUNTAS", "GUANACASTE ABANGARES SIERRA", "GUANACASTE ABANGARES SAN JUAN", "GUANACASTE ABANGARES COLORADO", "GUANACASTE TILARAN TILARAN", "GUANACASTE TILARAN QUEBRADA GRANDE", "GUANACASTE TILARAN TRONADORA", "GUANACASTE TILARAN SANTA ROSA", "GUANACASTE TILARAN LIBANO", "GUANACASTE TILARAN TIERRAS MORENAS", "GUANACASTE TILARAN ARENAL", "GUANACASTE NANDAYURE CARMONA", "GUANACASTE NANDAYURE SANTA RITA", "GUANACASTE NANDAYURE ZAPOTAL", "GUANACASTE NANDAYURE SAN PABLO", "GUANACASTE NANDAYURE PORVENIR", "GUANACASTE NANDAYURE BEJUCO", "GUANACASTE LA CRUZ LA CRUZ", "GUANACASTE LA CRUZ SANTA CECILIA", "GUANACASTE LA CRUZ LA GARITA", "GUANACASTE LA CRUZ SANTA ELENA", "GUANACASTE HOJANCHA HOJANCHA", "GUANACASTE HOJANCHA MONTE ROMO", "GUANACASTE HOJANCHA PUERTO CARRILLO", "GUANACASTE HOJANCHA HUACAS", "CARTAGO CARTAGO PARTE ORIENTAL ", "CARTAGO CARTAGO PARTE OCCIDENTAL", "CARTAGO CARTAGO CARMEN", "CARTAGO CARTAGO SAN NICOLAS", "CARTAGO CARTAGO SAN FRANCISCO", "CARTAGO CARTAGO GUADALUPE", "CARTAGO CARTAGO CORRALILLO", "CARTAGO CARTAGO TIERRA BLANCA", "CARTAGO CARTAGO DULCE NOMBRE", "CARTAGO CARTAGO LLANO GRANDE", "CARTAGO CARTAGO QUEBRADILLAS", "CARTAGO PARAISO PARAISO", "CARTAGO PARAISO SANTIAGO", "CARTAGO PARAISO OROSI", "CARTAGO PARAISO CACHI", "CARTAGO LA UNION TRES RIOS 3 RIOS", "CARTAGO LA UNION SAN DIEGO", "CARTAGO LA UNION SAN JUAN", "CARTAGO LA UNION SAN RAFAEL", "CARTAGO LA UNION CONCEPCION", "CARTAGO LA UNION DULCE NOMBRE", "CARTAGO LA UNION SAN RAMON", "CARTAGO LA UNION RIO AZUL", "CARTAGO JIMENEZ JUAN VIÑAS", "CARTAGO JIMENEZ TUCURRIQUE", "CARTAGO JIMENEZ PEJIBAYE", "CARTAGO TURRIALBA TURRIALBA", "CARTAGO TURRIALBA LA SUIZA", "CARTAGO TURRIALBA PERALTA", "CARTAGO TURRIALBA SANTA CRUZ", "CARTAGO TURRIALBA SANTA TERESITA", "CARTAGO TURRIALBA PAVONES", "CARTAGO TURRIALBA TUIS", "CARTAGO TURRIALBA TAYUTIC", "CARTAGO TURRIALBA SANTA ROSA", "CARTAGO TURRIALBA TRES EQUIS", "CARTAGO TURRIALBA LA ISABEL", "CARTAGO TURRIALBA EL CHIRRIPO", "CARTAGO ALVARADO PACAYAS", "CARTAGO ALVARADO CERVANTES", "CARTAGO ALVARADO CAPELLADES", "CARTAGO OREAMUNO SAN RAFAEL", "CARTAGO OREAMUNO COT", "CARTAGO OREAMUNO POTRERO CERRADO", "CARTAGO OREAMUNO CIPRESES", "CARTAGO OREAMUNO SANTA ROSA", "CARTAGO EL GUARCO EL TEJAR", "CARTAGO EL GUARCO SAN ISIDRO", "CARTAGO EL GUARCO TOBOSI", "CARTAGO EL GUARCO PATIO DE AGUA", "ALAJUELA ALAJUELA ALAJUELA", "ALAJUELA ALAJUELA SAN JOSE", "ALAJUELA ALAJUELA CARRIZAL", "ALAJUELA ALAJUELA SAN ANTONIO", "ALAJUELA ALAJUELA GUACIMA", "ALAJUELA ALAJUELA SAN ISIDRO", "ALAJUELA ALAJUELA SABANILLA", "ALAJUELA ALAJUELA SAN RAFAEL", "ALAJUELA ALAJUELA RIO SEGUNDO", "ALAJUELA ALAJUELA DESAMPARADOS", "ALAJUELA ALAJUELA TURRUCARES", "ALAJUELA ALAJUELA TAMBOR", "ALAJUELA ALAJUELA LA GARITA", "ALAJUELA ALAJUELA SAN MIGUEL DE SARAPIQUI", "ALAJUELA SAN RAMON SAN RAMON", "ALAJUELA SAN RAMON SANTIAGO", "ALAJUELA SAN RAMON SAN JUAN", "ALAJUELA SAN RAMON PIEDADES NORTE", "ALAJUELA SAN RAMON PIEDADES SUR", "ALAJUELA SAN RAMON SAN RAFAEL", "ALAJUELA SAN RAMON SAN ISIDRO", "ALAJUELA SAN RAMON ANGELES", "ALAJUELA SAN RAMON ALFARO", "ALAJUELA SAN RAMON VOLIO", "ALAJUELA SAN RAMON CONCEPCION", "ALAJUELA SAN RAMON ZAPOTAL", "ALAJUELA SAN RAMON PEÑAS BLANCAS", "ALAJUELA GRECIA GRECIA", "ALAJUELA GRECIA SAN ISIDRO", "ALAJUELA GRECIA SAN JOSE", "ALAJUELA GRECIA SAN ROQUE", "ALAJUELA GRECIA TACARES", "ALAJUELA GRECIA RIO CUARTO", "ALAJUELA GRECIA PUENTE DE PIEDRA", "ALAJUELA GRECIA BOLIVAR", "ALAJUELA SAN MATEO SAN MATEO", "ALAJUELA SAN MATEO DESMONTE", "ALAJUELA SAN MATEO JESUS MARIA", "ALAJUELA ATENAS ATENAS", "ALAJUELA ATENAS JESUS", "ALAJUELA ATENAS MERCEDES", "ALAJUELA ATENAS SAN ISIDRO", "ALAJUELA ATENAS CONCEPCION", "ALAJUELA ATENAS SAN JOSE", "ALAJUELA ATENAS SANTA EULALIA", "ALAJUELA NARANJO NARANJO", "ALAJUELA NARANJO SAN MIGUEL", "ALAJUELA NARANJO SAN JOSE", "ALAJUELA NARANJO CIRRI SUR", "ALAJUELA NARANJO SAN JERONIMO", "ALAJUELA NARANJO SAN JUAN", "ALAJUELA NARANJO ROSARIO", "ALAJUELA PALMARES PALMARES", "ALAJUELA PALMARES ZARAGOZA", "ALAJUELA PALMARES BUENOS AIRES", "ALAJUELA PALMARES SANTIAGO", "ALAJUELA PALMARES CANDELARIA", "ALAJUELA PALMARES ESQUIPULAS", "ALAJUELA PALMARES GRANJA", "ALAJUELA POAS SAN PEDRO", "ALAJUELA POAS SAN JUAN", "ALAJUELA POAS SAN RAFAEL", "ALAJUELA POAS CARRILLOS", "ALAJUELA POAS SABANA REDONDA", "ALAJUELA OROTINA OROTINA", "ALAJUELA OROTINA MASTATE", "ALAJUELA OROTINA HACIENDA VIEJA", "ALAJUELA OROTINA COYOLAR", "ALAJUELA OROTINA CEIBA", "ALAJUELA SAN CARLOS QUESADA", "ALAJUELA SAN CARLOS FLORENCIA", "ALAJUELA SAN CARLOS BUENAVISTA", "ALAJUELA SAN CARLOS AGUAS ZARCAS", "ALAJUELA SAN CARLOS VENECIA", "ALAJUELA SAN CARLOS PITAL", "ALAJUELA SAN CARLOS FORTUNA", "ALAJUELA SAN CARLOS TIGRA", "ALAJUELA SAN CARLOS PALMERA", "ALAJUELA SAN CARLOS VENADO", "ALAJUELA SAN CARLOS CUTRIS", "ALAJUELA SAN CARLOS MONTERREY", "ALAJUELA SAN CARLOS POCOSOL", "ALAJUELA ALFARO RUIZ ZARCERO", "ALAJUELA ALFARO RUIZ LAGUNA", "ALAJUELA ALFARO RUIZ TAPEZCO", "ALAJUELA ALFARO RUIZ GUADALUPE", "ALAJUELA ALFARO RUIZ PALMIRA", "ALAJUELA ALFARO RUIZ ZAPOTE", "ALAJUELA ALFARO RUIZ BRISAS", "ALAJUELA VALVERDE VEGA SARCHI NORTE", "ALAJUELA VALVERDE VEGA SARCHI SUR", "ALAJUELA VALVERDE VEGA TORO AMARILLO", "ALAJUELA VALVERDE VEGA SAN PEDRO", "ALAJUELA VALVERDE VEGA RODRIGUEZ", "ALAJUELA UPALA UPALA", "ALAJUELA UPALA AGUAS CLARAS", "ALAJUELA UPALA SAN JOSE ( PIZOTE)", "ALAJUELA UPALA BIJAGUA", "ALAJUELA UPALA DELICIAS", "ALAJUELA UPALA DOS RIOS", "ALAJUELA UPALA YOLILLAL", "ALAJUELA LOS CHILES LOS CHILES", "ALAJUELA LOS CHILES CAÑO NEGRO", "ALAJUELA LOS CHILES EL AMPARO", "ALAJUELA LOS CHILES SAN JORGE", "ALAJUELA GUATUSO SAN RAFAEL", "ALAJUELA GUATUSO BUENAVISTA", "ALAJUELA GUATUSO COTE" }));
+
+        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "RENOVACION", "PORTABILIDAD", "MIFI VENTA NUEVA", "MOVIL VENTA NUEVA", "MIGRACION" }));
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel14.setText("MONTO DEL SUBSIDIO *");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setText("MONTO DE LA ORDEN PATRONAL *");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel6.setText("MODELO DEL TELEFONO *");
+
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "SI", "NO" }));
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel12.setText("CLIENTE EXISTENTE *");
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel21.setText("numero de tarjeta y fecha de vencimiento");
+
+        jLabel18.setBackground(java.awt.SystemColor.activeCaption);
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel18.setText("MOVIL");
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel16.setText("TIPO SIM *");
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "NORMAL", "MICRO", "NANO", "NO REQUIERE SIM" }));
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel11.setText("PAQUETE SMS *");
+        jLabel11.setToolTipText("");
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "100 SMS", "300 SMS", "500 SMS", "700 SMS", "1000 SMS", "3000 SMS", "SIN PAQUETE", " " }));
+
+        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "PLUS 512 KBPS", "PRO 1 MBPS", "FULL 2 MBPS", "GOLD 3 MBPS", "PLATINO 4 MBPS", "DIAMOND 5 MBPS", "PLAN LTE 2 GB (120 Min - 1200 msm - 3 mbps)", "PLAN LTE 5 GB (3000 Min - 1700 msm - 3 mbps)", "PLAN LTE 8 GB (1250 Min - 2000 msm - 3 mbps)", "CUENTA CONTROL 1", "CUENTA CONTROL 2", "CUENTA CONTROL 3", "CUENTA CONTROL 4", "CUENTA CONTROL 5" }));
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel23.setText("SEGMENTACION *");
+
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose", "A", "B", "C", "N/A" }));
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel24.setText("Renta que tiene que pagar el cliente por mes");
 
         jButton1.setText("SUBMIT");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 65, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 1159, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(14, 14, 14))
             .addGroup(layout.createSequentialGroup()
-                .addGap(86, 86, 86)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel13)
-                            .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(141, 141, 141)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel10)
                             .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5)
@@ -207,11 +227,15 @@ public class VVentaMovil extends javax.swing.JPanel {
                             .addComponent(jLabel14)
                             .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel17)
-                            .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel20)
                             .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel21))
-                        .addGap(143, 143, 143)
+                            .addComponent(jLabel21)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel13))
+                            .addComponent(jLabel24)
+                            .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(53, 53, 53)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel22)
                             .addComponent(jLabel19)
@@ -222,33 +246,39 @@ public class VVentaMovil extends javax.swing.JPanel {
                             .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8)
                             .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel12)
-                            .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel15)
                             .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel12)
+                            .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(61, 61, 61)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jComboBox5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jComboBox7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel31, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel4)
+                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel31)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jCheckBox1)
-                                .addComponent(jCheckBox2)))))
+                                .addComponent(jCheckBox2))
+                            .addComponent(jLabel16)
+                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel11)
+                            .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel23)
+                            .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 1159, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(jButton1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addContainerGap()
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -274,80 +304,70 @@ public class VVentaMovil extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(jLabel24)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26)
                         .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel21)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBox1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jCheckBox1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jCheckBox2)
@@ -355,32 +375,79 @@ public class VVentaMovil extends javax.swing.JPanel {
                                 .addGap(7, 7, 7)
                                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                        .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addGap(40, 40, 40))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    String NomEmpresaTrab = jTextField6.getText();
+    String distritoTrabaja = jComboBox1.getSelectedItem().toString();
+    String direccionTrabaja = jTextField8.getText();
+    double montoOrdenPatrol = Double.parseDouble(jTextField9.getText());
+    String modeloTelefono= jComboBox2.getSelectedItem().toString();
+    String tipoSim = jComboBox3.getSelectedItem().toString();
+    String planPropuesto = jComboBox6.getSelectedItem().toString();
+    String paqueteMinutos = jComboBox4.getSelectedItem().toString();
+    String paqueteSms = jComboBox5.getSelectedItem().toString();
+    String paqueteDatos = jComboBox12.getSelectedItem().toString();
+    boolean clienteExiste = (jComboBox8.getSelectedItem().toString()=="SI")?true:false;
+    String segmentacion = jComboBox9.getSelectedItem().toString();
+    double montoSubsidio = Double.parseDouble(jTextField10.getText());
+    double rentaAnterior = Double.parseDouble(jTextField11.getText());
+    double rentaActual = Double.parseDouble(jTextField12.getText());
+    String formaPago= jComboBox11.getSelectedItem().toString();
+    String[] sinfronteras = new String[2];
+        if(jCheckBox1.isSelected()){
+            sinfronteras[0]=jCheckBox1.getText();
+        }
+        if(jCheckBox2.isSelected()){
+            sinfronteras[1]=jCheckBox2.getText();
+        }
+    StringBuilder sinFronteras = new StringBuilder();
+    for (int i = 0; i < sinfronteras.length; i++) {
+            if(sinfronteras[i]!=null){
+                if(sinFronteras.toString().equals("")){
+                    sinFronteras.append(sinfronteras[i]);
+                }else{
+                    sinFronteras.append(","+sinfronteras[i]);
+                }
+            }
+        }
+    String informacionTarjeta = jTextField13.getText();
+    String tipoVenta = jComboBox13.getSelectedItem().toString();
+    VentaMovil ventaMovil =  GL_Principal.VentaMovil(NomEmpresaTrab, distritoTrabaja, direccionTrabaja, montoOrdenPatrol, modeloTelefono, tipoSim, planPropuesto, paqueteMinutos, paqueteSms, paqueteDatos, clienteExiste, segmentacion, montoSubsidio, rentaAnterior, rentaActual, formaPago, sinFronteras.toString(), informacionTarjeta, tipoVenta);
+    GL_Principal.Regresar_Movil(1);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox11;
+    private javax.swing.JComboBox<String> jComboBox12;
     private javax.swing.JComboBox<String> jComboBox13;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
-    private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JLabel jLabel1;
@@ -398,14 +465,14 @@ public class VVentaMovil extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;

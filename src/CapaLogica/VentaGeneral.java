@@ -13,6 +13,8 @@ import java.util.Date;
  */
 public class VentaGeneral {
 
+    
+    
     public VentaGeneral(String procencia, String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia) {
         this.procencia = procencia;
         this.NombreCliente = NombreCliente;

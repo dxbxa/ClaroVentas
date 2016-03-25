@@ -1044,7 +1044,7 @@ try {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-try {
+        try {
         String idusuario=jTextField8.getText(),
         nombre=jTextField9.getText(),
         clave=jTextField10.getText(),
