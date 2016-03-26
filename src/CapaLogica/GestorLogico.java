@@ -46,8 +46,8 @@ public class GestorLogico {
         
     }
     
-    public VentaGeneral VentaGene(String procencia, String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia){
-        return ventaGeneral = new VentaGeneral(procencia, NombreCliente, Cedula, fechaVencCedula, Asesor, fechaNacimiento, estadoCivil, telMovil, telFijo, telTrabajo, provincia, canton, distrito, direccionCLiente, cantonEntrega, direccionEntrega, montoOrden, referenciaLaboral, telReferenciaLaboral, parentescoLaboral, nomRefFamiliar, telRefFamiliar, parentescoFamiliar, cantonRefFamiliar, nomRefPersonal, telRefPersonal, parentescoRefPersonal, cantonRefPersonal, procedenciaVenta, requisitosPoliticas, producto, fechaEntrega, horarioEntrega, comentariosVenta, regalia);
+    public VentaGeneral VentaGene(String procencia, String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia, String correoElectronico, Date fechaLlamada){
+        return ventaGeneral = new VentaGeneral(procencia, NombreCliente, Cedula, fechaVencCedula, Asesor, fechaNacimiento, estadoCivil, telMovil, telFijo, telTrabajo, provincia, canton, distrito, direccionCLiente, cantonEntrega, direccionEntrega, montoOrden, referenciaLaboral, telReferenciaLaboral, parentescoLaboral, nomRefFamiliar, telRefFamiliar, parentescoFamiliar, cantonRefFamiliar, nomRefPersonal, telRefPersonal, parentescoRefPersonal, cantonRefPersonal, procedenciaVenta, requisitosPoliticas, producto, fechaEntrega, horarioEntrega, comentariosVenta, regalia,correoElectronico,fechaLlamada);
     }
     
     public VentaDTH VentaDTH(String numeroBurro, String anticipo, String dondeFirmaInstala, String tipoProducto, double rentaPagar, String adicionales, String esquemaContratacionA, String esquemaContratacionB, String esquemaContratacionC){
@@ -143,6 +143,13 @@ public class GestorLogico {
              pIdentificador7_Nombre, pIdentificador7_Contenido, pIdentificador8_Nombre,
              pIdentificador8_Contenido, pIdentificador9_Nombre, pIdentificador9_Contenido,
              pStatus, pID_Usuario_Asignado, pComentario, pResultado, pID_Usuario_Gestion);
+    }
+    public void Insertar_Movil(VentaGeneral vg, VentaMovil vm) throws Exception{
+        objCnx.Insertar_Movil(vg, vm);
+    }
+    
+    public void Insertar_DTH(VentaGeneral vg, VentaDTH vdth) throws Exception{
+        objCnx.Insertar_DTH(vg, vdth);
     }
     
     

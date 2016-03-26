@@ -9,7 +9,12 @@
 
 package CapaBD;
 
+import CapaLogica.VentaDTH;
+import CapaLogica.VentaGeneral;
+import CapaLogica.VentaMovil;
 import java.sql.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -171,7 +176,331 @@ public class ConexionBD {
        finally {
              conn.close(); 
        }
-    }    
+    }  
+    
+    
+    public void Insertar_DTH(VentaGeneral vg, VentaDTH vdth)
+            throws Exception{
+        DateFormat formatter ; 
+        formatter = new SimpleDateFormat("dd/mm/yyyy");
+        String query="INSERT INTO T_VENTA_NUEVA values ("
+        + "'"+formatter.format(vg.getFechaLlamada())+"',"
+        + "'"+vg.getAsesor()+"',"
+        + "'"+vg.getNombreCliente()+"',"
+        + "'"+vg.getCedula()+"',"
+        + "'"+formatter.format(vg.getFechaVencCedula())+"',"
+        + "'"+formatter.format(vg.getFechaNacimiento())+"',"
+        + "'"+vg.getEstadoCivil()+"',"
+        + "'"+vg.getTelMovil()+"',"
+        + "'"+vg.getTelFijo()+"',"
+        + "'"+vg.getTelTrabajo()+"',"
+        + "'"+vg.getCorreoElectronico()+"',"
+        + "'"+vg.getProvincia()+"',"
+        + "'"+vg.getCanton()+"',"
+        + "'"+vg.getDistrito()+"',"
+        + "'"+vg.getDireccionCLiente()+"',"
+        + "'"+vg.getCantonEntrega()+"',"
+        + "'"+vg.getDireccionEntrega()+"',"
+        + "'"+vg.getMontoOrden()+"',"
+        + "'"+vg.getReferenciaLaboral()+"',"
+        + "'"+vg.getTelReferenciaLaboral()+"',"
+        + "'"+vg.getParentescoLaboral()+"',"
+        + "'"+vg.getNomRefFamiliar()+"',"
+        + "'"+vg.getTelRefFamiliar()+"',"
+        + "'"+vg.getCantonRefFamiliar()+"',"
+        + "'"+vg.getParentescoFamiliar()+"',"
+        + "'"+vg.getNomRefPersonal()+"',"
+        + "'"+vg.getTelRefPersonal()+"',"
+        + "'"+vg.getCantonRefPersonal()+"',"
+        + "'"+vg.getParentescoRefPersonal()+"',"
+        + "'"+vg.getProcedenciaVenta()+"',"
+        + "'"+vg.getRequisitosPoliticas()+"',"
+        + "'"+vg.getProducto()+"',"
+        // Se agrega informacion de Movil
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        //Se agrega informacion de DTH
+        + "'"+vdth.getNumeroBurro()+"',"
+        + "'"+vdth.getAnticipo()+"',"
+        + "'"+vdth.getDondeFirmaInstala()+"',"
+        + "'"+vdth.getTipoProducto()+"',"       
+        + "'"+vdth.getAdicionales()+"',"
+        + "'"+vdth.getEsquemaContratacionA()+"',"
+        + "'"+vdth.getEsquemaContratacionB()+"',"
+        + "'"+vdth.getEsquemaContratacionC()+"',"
+        + "'"+vdth.getRentaPagar()+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+formatter.format(vg.getFechaEntrega())+"',"
+        + "'"+vg.getHorarioEntrega()+"',"
+        + "'"+vg.getComentariosVenta()+"',"
+        + "'"+vg.getRegalia()+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"');";
+//        <{NOMBRE_DE_USUARIO: }>,
+//        <{RESPONSABLE_VENTAS: }>,
+//        <{PENDIENTE_DOCUMENTACION_: }>,
+//        <{FECHA_VENTAS: }>,
+//        <{COMENTARIO_VENTAS: }>,
+//        <{RESPONSABLE_BO: }>,
+//        <{STATUS_BO: }>,
+//        <{FECHA_BO: }>,
+//        <{COMENTARIO_BO: }>,
+//        <{CONTRATO: }>,
+//        <{FECHA_SUBIDO_A_OPEN: }>,
+//        <{FECHA_ACTIVACIÓN: }>,
+//        <{CEDULA2: }>,
+//        <{SUBIDO_POR: }>,
+//        <{RESPONSABLE_LOGISTICA: }>,
+//        <{FECHA_DE_ASIGNACION_: }>,
+//        <{FECHA_DE_FIRMA: }>,
+//        <{MENSAJERO: }>,
+//        <{STATUS_LOGISTICA: }>,
+//        <{FECHA_ULTIMO_STATUS: }>,
+//        <{MENSAJERO_RUTA: }>,
+//        <{FECHA_DE_SALIDA_DE_CONTRATO: }>,
+//        <{FECHA_DE_REGRESO: }>,
+//        <{STATUS_DEL_CONTRATO: }>,
+//        <{FECHA_REPROCESO: }>,
+//        <{FECHA_REGRESO_DEL_REPROCESO: }>,
+//        <{MENSAJERO_REPROCESO: }>,
+//        <{COMENTARIO_LOGISTICA: }>,
+//        <{RESPONSABLE_CAJAS: }>,
+//        <{STATUS_DE_CAJAS: }>,
+//        <{FECHA_CAJAS: }>,
+//        <{COMENTARIO_CAJAS: }>,
+//        <{STATUS_LOGISTICA2: }>);
+        
+
+       System.out.println("\n insertar out bound\n"+query);
+                
+       Class.forName ("com.mysql.jdbc.Driver");
+       Connection conn = DriverManager.getConnection("jdbc:mysql://173.194.232.184:3306/BD_Callcenter", "app_cnx01_stt", "cemmeWrev1");
+       try {
+         Statement stmt = conn.createStatement();
+         try {
+           stmt.execute(query);
+         }
+         finally {
+               stmt.close(); 
+         }
+       }
+       finally {
+             conn.close(); 
+       }
+    }  
+    
+    public void Insertar_Movil(VentaGeneral vg, VentaMovil vm)
+            throws Exception{
+        DateFormat formatter ; 
+        formatter = new SimpleDateFormat("dd/mm/yyyy");
+        String query="INSERT INTO T_VENTA_NUEVA values ("
+        + "'"+formatter.format(vg.getFechaLlamada())+"',"
+        + "'"+vg.getAsesor()+"',"
+        + "'"+vg.getNombreCliente()+"',"
+        + "'"+vg.getCedula()+"',"
+        + "'"+formatter.format(vg.getFechaVencCedula())+"',"
+        + "'"+formatter.format(vg.getFechaNacimiento())+"',"
+        + "'"+vg.getEstadoCivil()+"',"
+        + "'"+vg.getTelMovil()+"',"
+        + "'"+vg.getTelFijo()+"',"
+        + "'"+vg.getTelTrabajo()+"',"
+        + "'"+vg.getCorreoElectronico()+"',"
+        + "'"+vg.getProvincia()+"',"
+        + "'"+vg.getCanton()+"',"
+        + "'"+vg.getDistrito()+"',"
+        + "'"+vg.getDireccionCLiente()+"',"
+        + "'"+vg.getCantonEntrega()+"',"
+        + "'"+vg.getDireccionEntrega()+"',"
+        + "'"+vg.getMontoOrden()+"',"
+        + "'"+vg.getReferenciaLaboral()+"',"
+        + "'"+vg.getTelReferenciaLaboral()+"',"
+        + "'"+vg.getParentescoLaboral()+"',"
+        + "'"+vg.getNomRefFamiliar()+"',"
+        + "'"+vg.getTelRefFamiliar()+"',"
+        + "'"+vg.getCantonRefFamiliar()+"',"
+        + "'"+vg.getParentescoFamiliar()+"',"
+        + "'"+vg.getNomRefPersonal()+"',"
+        + "'"+vg.getTelRefPersonal()+"',"
+        + "'"+vg.getCantonRefPersonal()+"',"
+        + "'"+vg.getParentescoRefPersonal()+"',"
+        + "'"+vg.getProcedenciaVenta()+"',"
+        + "'"+vg.getRequisitosPoliticas()+"',"
+        + "'"+vg.getProducto()+"',"
+        // Se agrega informacion de Movil
+        + "'"+vm.getNomEmpresaTrab()+"',"
+        + "'"+vm.getDistritoTrabaja()+"',"
+        + "'"+vm.getDireccionTrabaja()+"',"
+        + "'"+vm.getMontoOrdenPatrol()+"',"
+        + "'"+vm.getModeloTelefono()+"',"
+        + "'"+vm.getTipoSim()+"',"
+        + "'"+vm.getPlanPropuesto()+"',"
+        + "'"+vm.getPaqueteMinutos()+"',"
+        + "'"+vm.getPaqueteSms()+"',"
+        + "'"+vm.getPaqueteDatos()+"',"
+        + "'"+vm.getSinFronteras()+"',"
+        + "'"+vm.isClienteExiste()+"',"
+        + "'"+vm.getSegmentacion()+"',"
+        + "'"+vm.getMontoSubsidio()+"',"
+        + "'"+vm.getRentaAnterior()+"',"
+        + "'"+vm.getRentaActual()+"',"
+        + "'"+vm.getFormaPago()+"',"
+        + "'"+vm.getInformacionTarjeta()+"',"
+        + "'"+vm.getTipoVenta()+"',"
+        //Se agrega informacion de DTH
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+formatter.format(vg.getFechaEntrega())+"',"
+        + "'"+vg.getHorarioEntrega()+"',"
+        + "'"+vg.getComentariosVenta()+"',"
+        + "'"+vg.getRegalia()+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"',"
+        + "'"+null+"');";
+//        <{NOMBRE_DE_USUARIO: }>,
+//        <{RESPONSABLE_VENTAS: }>,
+//        <{PENDIENTE_DOCUMENTACION_: }>,
+//        <{FECHA_VENTAS: }>,
+//        <{COMENTARIO_VENTAS: }>,
+//        <{RESPONSABLE_BO: }>,
+//        <{STATUS_BO: }>,
+//        <{FECHA_BO: }>,
+//        <{COMENTARIO_BO: }>,
+//        <{CONTRATO: }>,
+//        <{FECHA_SUBIDO_A_OPEN: }>,
+//        <{FECHA_ACTIVACIÓN: }>,
+//        <{CEDULA2: }>,
+//        <{SUBIDO_POR: }>,
+//        <{RESPONSABLE_LOGISTICA: }>,
+//        <{FECHA_DE_ASIGNACION_: }>,
+//        <{FECHA_DE_FIRMA: }>,
+//        <{MENSAJERO: }>,
+//        <{STATUS_LOGISTICA: }>,
+//        <{FECHA_ULTIMO_STATUS: }>,
+//        <{MENSAJERO_RUTA: }>,
+//        <{FECHA_DE_SALIDA_DE_CONTRATO: }>,
+//        <{FECHA_DE_REGRESO: }>,
+//        <{STATUS_DEL_CONTRATO: }>,
+//        <{FECHA_REPROCESO: }>,
+//        <{FECHA_REGRESO_DEL_REPROCESO: }>,
+//        <{MENSAJERO_REPROCESO: }>,
+//        <{COMENTARIO_LOGISTICA: }>,
+//        <{RESPONSABLE_CAJAS: }>,
+//        <{STATUS_DE_CAJAS: }>,
+//        <{FECHA_CAJAS: }>,
+//        <{COMENTARIO_CAJAS: }>,
+//        <{STATUS_LOGISTICA2: }>);
+
+       System.out.println("\n insertar out bound\n"+query);
+                
+       Class.forName ("com.mysql.jdbc.Driver");
+       Connection conn = DriverManager.getConnection("jdbc:mysql://173.194.232.184:3306/BD_Callcenter", "app_cnx01_stt", "cemmeWrev1");
+       try {
+         Statement stmt = conn.createStatement();
+         try {
+           stmt.execute(query);
+         }
+         finally {
+               stmt.close(); 
+         }
+       }
+       finally {
+             conn.close(); 
+       }
+    }  
     
     public String[][] Buscar_Inbound_x_ID(String pcedula)throws Exception{
         
