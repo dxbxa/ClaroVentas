@@ -15,9 +15,8 @@ public class VentaGeneral {
 
     
     
-    public VentaGeneral(String procencia, String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia, String correoElectronico,Date fechaLlamada) {
+    public VentaGeneral(String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia, String correoElectronico,Date fechaLlamada) {
         this.fechaLlamada = fechaLlamada;
-        this.procencia = procencia;
         this.NombreCliente = NombreCliente;
         this.Cedula = Cedula;
         this.fechaVencCedula = fechaVencCedula;
@@ -56,7 +55,6 @@ public class VentaGeneral {
     }
     
     Date fechaLlamada;
-    String procencia;
     String NombreCliente;
     int Cedula;
     Date fechaVencCedula;
@@ -108,14 +106,6 @@ public class VentaGeneral {
 
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
-    }
-
-    public String getProcencia() {
-        return procencia;
-    }
-
-    public void setProcencia(String procencia) {
-        this.procencia = procencia;
     }
 
     public String getNombreCliente() {

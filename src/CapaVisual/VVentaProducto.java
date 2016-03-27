@@ -46,9 +46,16 @@ public class VVentaProducto extends javax.swing.JFrame {
         bg2.add(jRadioButton7);
         bg2.add(jRadioButton8);
         
+        ButtonGroup bg3 = new ButtonGroup();
+
+        bg3.add(jRadioButton10);
+        bg3.add(jRadioButton11);
+        bg3.add(jRadioButton12);
+        bg3.add(jRadioButton13);
+        
 
     }
-    public VVentaProducto(GestorLogico pGLPrincipal,int pPadre) {
+    public VVentaProducto(GestorLogico pGLPrincipal,int pPadre, String procedencia) {
         Padre=pPadre;
         GL_Principal=pGLPrincipal;
         try { 
@@ -61,7 +68,11 @@ public class VVentaProducto extends javax.swing.JFrame {
         groupButton();
         String [] asesores = {"Jeimy Rivera","Fabiola Porras","Jennifer Arguedas", "Jose Calvo", "Steven Umaña","Valeska Chavez","Yari Lopez","Yuliana Venegas", "Denis Gonzales","Kimberly Fonseca","Yendry Garcia","Jonathan Corrales","Luis Sandoval","Vanessa Monge", "Stephanie Batista","Catalina Barquero","Josue Quesada Mora","Olman Monge Torres", "Jacqueline Hidalgo Chaves", "Oscar Gamboa Aguilar","Oscar Alfaro Jimenez","Rodrigo Tindel Villareal", "Agnes Mena Bustamante", "Maria Paola Chaves Altamirano","Marianela Jimenez Navarro", "Dan Chavez Zamora", "Jennifer Arce Guzman","David Brenes Brenes","Jonathan Bryan"};
         jComboBox1 = new JComboBox(asesores);
+        switch(procedencia){
+            case("InBound"):jRadioButton10.setSelected(true);
+                            break;
         
+        }    
         pack();
         
         
@@ -141,10 +152,6 @@ public class VVentaProducto extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
         jLabel32 = new javax.swing.JLabel();
         jTextField15 = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
@@ -181,16 +188,22 @@ public class VVentaProducto extends javax.swing.JFrame {
         jCheckBox10 = new javax.swing.JCheckBox();
         jCheckBox11 = new javax.swing.JCheckBox();
         jFormattedTextField4 = new javax.swing.JFormattedTextField();
+        jRadioButton10 = new javax.swing.JRadioButton();
+        jRadioButton11 = new javax.swing.JRadioButton();
+        jRadioButton12 = new javax.swing.JRadioButton();
+        jRadioButton13 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
-        jComboBox9 = new javax.swing.JComboBox<>();
-        jLabel41 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel18.setBackground(java.awt.SystemColor.activeCaption);
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(102, 102, 255));
         jLabel18.setText("REFERENCIAS");
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel17.setText("MONTO DE LA ORDEN *");
@@ -470,6 +483,8 @@ public class VVentaProducto extends javax.swing.JFrame {
 
         jScrollPane2.setViewportView(jPanel2);
 
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
         jCheckBox6.setText("ESTADOS DE CUENTA");
 
         jCheckBox5.setText("TARJETA PARA CARGO AUTOMATICO");
@@ -507,14 +522,6 @@ public class VVentaProducto extends javax.swing.JFrame {
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel31.setText("PROCEDENCIA DE VENTA *");
-
-        jCheckBox1.setText("INBOUND");
-
-        jCheckBox2.setText("OUTBOUND");
-
-        jCheckBox3.setText("REFERIDOS");
-
-        jCheckBox4.setText("OTHER");
 
         jLabel32.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel32.setText("REQUISITOS SEGUN POLITICAS *");
@@ -603,6 +610,18 @@ public class VVentaProducto extends javax.swing.JFrame {
         }
         jFormattedTextField4.setText("");
 
+        jRadioButton10.setText("INBOUND");
+        jRadioButton10.setEnabled(false);
+
+        jRadioButton11.setText("OUTBOUND");
+        jRadioButton11.setEnabled(false);
+
+        jRadioButton12.setText("REFERIDOS");
+        jRadioButton12.setEnabled(false);
+
+        jRadioButton13.setText("OTHER");
+        jRadioButton13.setEnabled(false);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -611,22 +630,25 @@ public class VVentaProducto extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel35)
-                            .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel37)
-                            .addComponent(jLabel29)
-                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel31)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(41, 41, 41)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel35)
+                                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel37)
+                                    .addComponent(jLabel29)
+                                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel31)))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                                .addGap(50, 50, 50)
+                                .addGap(91, 91, 91)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckBox1)
-                                    .addComponent(jCheckBox2)
-                                    .addComponent(jCheckBox3)
+                                    .addComponent(jRadioButton12)
+                                    .addComponent(jRadioButton11)
+                                    .addComponent(jRadioButton10)
                                     .addGroup(jPanel3Layout.createSequentialGroup()
-                                        .addComponent(jCheckBox4)
+                                        .addComponent(jRadioButton13)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(49, 49, 49)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -751,26 +773,24 @@ public class VVentaProducto extends javax.swing.JFrame {
                                     .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel3Layout.createSequentialGroup()
-                                        .addGap(11, 11, 11)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel3Layout.createSequentialGroup()
                                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(jPanel3Layout.createSequentialGroup()
-                                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                            .addComponent(jCheckBox1)
-                                                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                                                .addGap(29, 29, 29)
-                                                                .addComponent(jCheckBox2)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addComponent(jCheckBox3)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                    .addComponent(jCheckBox4)
-                                                                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                                        .addGap(20, 20, 20))
                                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                                         .addComponent(jCheckBox9)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                                        .addComponent(jRadioButton10)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(jRadioButton11)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(jRadioButton12)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(jRadioButton13))
+                                                        .addGap(20, 20, 20)))
                                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jLabel35)
                                                     .addComponent(jCheckBox11))
@@ -798,7 +818,7 @@ public class VVentaProducto extends javax.swing.JFrame {
                                                 .addComponent(jRadioButton9)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jRadioButton1)))
-                                        .addGap(0, 46, Short.MAX_VALUE))
+                                        .addGap(0, 51, Short.MAX_VALUE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jCheckBox8)
@@ -848,43 +868,24 @@ public class VVentaProducto extends javax.swing.JFrame {
             }
         });
 
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "InBound", "OutBound" }));
-        jComboBox9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox9ActionPerformed(evt);
-            }
-        });
-
-        jLabel41.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel41.setText("PROCEDENCIA");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel41)
-                        .addGap(31, 31, 31)
-                        .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton1)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1176, Short.MAX_VALUE)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1176, Short.MAX_VALUE)
-                        .addComponent(jLabel18)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton1)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1176, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1176, Short.MAX_VALUE)
+                    .addComponent(jLabel18)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(0, 41, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel41)
-                    .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(45, 45, 45)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -894,7 +895,7 @@ public class VVentaProducto extends javax.swing.JFrame {
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -964,32 +965,20 @@ public class VVentaProducto extends javax.swing.JFrame {
             Regalia = jRadioButton8.getText();
         }
         
-        String[] procedencia = new String[4];
         
-        if(jCheckBox1.isSelected()){
-            procedencia[0]=jCheckBox1.getText();
+        String procedenciaSel = "";
+        if(jRadioButton10.isSelected()){
+            procedenciaSel = jRadioButton10.getText();
         }
-        if(jCheckBox2.isSelected()){
-            procedencia[1]=jCheckBox2.getText();
+        if(jRadioButton11.isSelected()){
+            procedenciaSel = jRadioButton11.getText();
         }
-        if(jCheckBox3.isSelected()){
-            procedencia[2]=jCheckBox3.getText();
+        if(jRadioButton12.isSelected()){
+            procedenciaSel = jRadioButton12.getText();
         }
-        if(jCheckBox4.isSelected()){
-            procedencia[3]=jCheckBox4.getText();
+        if(jRadioButton13.isSelected()){
+            procedenciaSel = jTextField22.getText();
         }
-        StringBuilder strBuilder = new StringBuilder();
-        for (int i = 0; i < procedencia.length; i++) {
-            if(procedencia[i] != null){
-                if(strBuilder.toString().equals("")){
-                    strBuilder.append(procedencia[i]);
-                }else{
-                    strBuilder.append(","+procedencia[i]);
-                }
-            }
-           
-        }
-        String procedenciaSel = strBuilder.toString();
         
         String[] requisitos = new String[4];
         
@@ -1017,21 +1006,20 @@ public class VVentaProducto extends javax.swing.JFrame {
         }
 //        String RequisitosSel = strBuilder2.toString();
     try{
-        String procencia = jComboBox9.getSelectedItem().toString();
         String NombreCliente = jTextField1.getText().toString();
         int Cedula = Integer.parseInt(jTextField2.getText());
         Date fechaVencCedula = FechaVenCed;
-        String Asesor = jComboBox1.getSelectedItem().toString();
+        String Asesor = (jComboBox1.getSelectedItem().toString()=="Choose")?"":jComboBox1.getSelectedItem().toString();
         Date fechaNacimiento = FechaNacimiento;
-        String estadoCivil= jComboBox2.getSelectedItem().toString();
+        String estadoCivil= (jComboBox2.getSelectedItem().toString()=="Choose")?"":jComboBox2.getSelectedItem().toString();
         int telMovil = Integer.parseInt(jTextField5.getText().toString());
         int telFijo = Integer.parseInt(jTextField4.getText().toString());
         int telTrabajo = Integer.parseInt(jTextField7.getText().toString());
-        String provincia =jComboBox3.getSelectedItem().toString();
-        String canton = jComboBox4.getSelectedItem().toString();
-        String distrito = jComboBox5.getSelectedItem().toString();
+        String provincia =(jComboBox3.getSelectedItem().toString()=="Choose")?"":jComboBox3.getSelectedItem().toString();
+        String canton = (jComboBox4.getSelectedItem().toString()=="Choose")?"":jComboBox4.getSelectedItem().toString();
+        String distrito = (jComboBox5.getSelectedItem().toString()=="Choose")?"":jComboBox5.getSelectedItem().toString();
         String direccionCLiente = jTextArea2.getText().toString();
-        String cantonEntrega = jComboBox6.getSelectedItem().toString();
+        String cantonEntrega = (jComboBox6.getSelectedItem().toString()=="Choose")?"":jComboBox6.getSelectedItem().toString();
         String direccionEntrega= jTextArea1.getText().toString();
         double montoOrden = Double.parseDouble(jFormattedTextField2.getText().toString());
         String referenciaLaboral = jTextField8.getText().toString();
@@ -1040,11 +1028,11 @@ public class VVentaProducto extends javax.swing.JFrame {
         String nomRefFamiliar = jTextField13.getText().toString();
         int telRefFamiliar= Integer.parseInt(jTextField14.getText().toString());
         String parentescoFamiliar = jTextField15.getText().toString();
-        String cantonRefFamiliar = jComboBox7.getSelectedItem().toString();
+        String cantonRefFamiliar = (jComboBox7.getSelectedItem().toString()=="Choose")?"":jComboBox7.getSelectedItem().toString();
         String nomRefPersonal = jTextField18.getText().toString();
         int telRefPersonal = Integer.parseInt(jTextField17.getText().toString());
         String parentescoRefPersonal = jTextField16.getText().toString();
-        String cantonRefPersonal = jComboBox8.getSelectedItem().toString();
+        String cantonRefPersonal = (jComboBox8.getSelectedItem().toString()=="Choose")?"":jComboBox8.getSelectedItem().toString();
         String procedenciaVenta = procedenciaSel;
         String requisitosPoliticas = strBuilder2.toString();
         String producto = productoradioText;
@@ -1054,7 +1042,7 @@ public class VVentaProducto extends javax.swing.JFrame {
         Boolean regalia =Boolean.parseBoolean(Regalia);
         String correoElectronico = jTextField23.getText().toString();
         Date fechaLlamada = new Date();
-        VentaGeneral ventaGene =  GL_Principal.VentaGene(procencia, NombreCliente, Cedula, fechaVencCedula, Asesor, fechaNacimiento, estadoCivil, telMovil, telFijo, telTrabajo, provincia, canton, distrito, direccionCLiente, cantonEntrega, direccionEntrega, montoOrden, referenciaLaboral, telReferenciaLaboral, parentescoLaboral, nomRefFamiliar, telRefFamiliar, parentescoFamiliar, cantonRefFamiliar, nomRefPersonal, telRefPersonal, parentescoRefPersonal, cantonRefPersonal, procedenciaVenta, requisitosPoliticas, producto, fechaEntrega, horarioEntrega, comentariosVenta, regalia,correoElectronico,fechaLlamada);
+        VentaGeneral ventaGene =  GL_Principal.VentaGene( NombreCliente, Cedula, fechaVencCedula, Asesor, fechaNacimiento, estadoCivil, telMovil, telFijo, telTrabajo, provincia, canton, distrito, direccionCLiente, cantonEntrega, direccionEntrega, montoOrden, referenciaLaboral, telReferenciaLaboral, parentescoLaboral, nomRefFamiliar, telRefFamiliar, parentescoFamiliar, cantonRefFamiliar, nomRefPersonal, telRefPersonal, parentescoRefPersonal, cantonRefPersonal, procedenciaVenta, requisitosPoliticas, producto, fechaEntrega, horarioEntrega, comentariosVenta, regalia,correoElectronico,fechaLlamada);
         if(productoradioText.equals("DTH")||productoradioText.equals("CASA CLARO")){
                 GL_Principal.VVentaDTH(GL_Principal, 1,ventaGene);
          }else if(productoradioText.equals("MOVIL VENTA NUEVA")|| productoradioText.equals("DATA CARD")||productoradioText.equals("RENOVACION")|| productoradioText.equals("PORTABILIDAD")|| productoradioText.equals("MIGRACION PREPAGO o POSTPAGO")){
@@ -1069,10 +1057,6 @@ public class VVentaProducto extends javax.swing.JFrame {
     }
    
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox9ActionPerformed
 
     private void jTextField2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyTyped
         char c = evt.getKeyChar();
@@ -1134,12 +1118,8 @@ public class VVentaProducto extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox11;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JCheckBox jCheckBox5;
     private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JCheckBox jCheckBox7;
@@ -1153,7 +1133,6 @@ public class VVentaProducto extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
     private javax.swing.JComboBox<String> jComboBox8;
-    private javax.swing.JComboBox<String> jComboBox9;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JFormattedTextField jFormattedTextField3;
@@ -1193,7 +1172,6 @@ public class VVentaProducto extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1203,6 +1181,10 @@ public class VVentaProducto extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton10;
+    private javax.swing.JRadioButton jRadioButton11;
+    private javax.swing.JRadioButton jRadioButton12;
+    private javax.swing.JRadioButton jRadioButton13;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;

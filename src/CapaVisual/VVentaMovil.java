@@ -102,6 +102,7 @@ public class VVentaMovil extends javax.swing.JFrame {
         jFormattedTextField5 = new javax.swing.JFormattedTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel20.setText("INFORMACION DE LA TARJETA");
@@ -410,21 +411,21 @@ public class VVentaMovil extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     String NomEmpresaTrab = jTextField6.getText();
-    String distritoTrabaja = jComboBox1.getSelectedItem().toString();
+    String distritoTrabaja = (jComboBox1.getSelectedItem().toString()=="Choose")?"":jComboBox1.getSelectedItem().toString();
     String direccionTrabaja = jTextField8.getText();
     double montoOrdenPatrol = Double.parseDouble(jFormattedTextField2.getText());
-    String modeloTelefono= jComboBox2.getSelectedItem().toString();
-    String tipoSim = jComboBox3.getSelectedItem().toString();
-    String planPropuesto = jComboBox6.getSelectedItem().toString();
-    String paqueteMinutos = jComboBox4.getSelectedItem().toString();
-    String paqueteSms = jComboBox5.getSelectedItem().toString();
-    String paqueteDatos = jComboBox12.getSelectedItem().toString();
+    String modeloTelefono= (jComboBox2.getSelectedItem().toString()=="Choose")?"":jComboBox2.getSelectedItem().toString();
+    String tipoSim = (jComboBox3.getSelectedItem().toString()=="Choose")?"":jComboBox3.getSelectedItem().toString();
+    String planPropuesto = (jComboBox6.getSelectedItem().toString()=="Choose")?"":jComboBox6.getSelectedItem().toString();
+    String paqueteMinutos = (jComboBox4.getSelectedItem().toString()=="Choose")?"":jComboBox4.getSelectedItem().toString();
+    String paqueteSms = (jComboBox5.getSelectedItem().toString()=="Choose")?"":jComboBox5.getSelectedItem().toString();
+    String paqueteDatos = (jComboBox12.getSelectedItem().toString()=="Choose")?"":jComboBox12.getSelectedItem().toString();
     boolean clienteExiste = (jComboBox8.getSelectedItem().toString()=="SI")?true:false;
-    String segmentacion = jComboBox9.getSelectedItem().toString();
+    String segmentacion = (jComboBox9.getSelectedItem().toString()=="Choose")?"":jComboBox9.getSelectedItem().toString();
     double montoSubsidio = Double.parseDouble(jFormattedTextField3.getText());
     double rentaAnterior = Double.parseDouble(jFormattedTextField5.getText());
     double rentaActual = Double.parseDouble(jFormattedTextField4.getText());
-    String formaPago= jComboBox11.getSelectedItem().toString();
+    String formaPago= (jComboBox11.getSelectedItem().toString()=="Choose")?"":jComboBox11.getSelectedItem().toString();
     String[] sinfronteras = new String[2];
         if(jCheckBox1.isSelected()){
             sinfronteras[0]=jCheckBox1.getText();

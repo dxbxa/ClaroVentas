@@ -46,8 +46,8 @@ public class GestorLogico {
         
     }
     
-    public VentaGeneral VentaGene(String procencia, String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia, String correoElectronico, Date fechaLlamada){
-        return ventaGeneral = new VentaGeneral(procencia, NombreCliente, Cedula, fechaVencCedula, Asesor, fechaNacimiento, estadoCivil, telMovil, telFijo, telTrabajo, provincia, canton, distrito, direccionCLiente, cantonEntrega, direccionEntrega, montoOrden, referenciaLaboral, telReferenciaLaboral, parentescoLaboral, nomRefFamiliar, telRefFamiliar, parentescoFamiliar, cantonRefFamiliar, nomRefPersonal, telRefPersonal, parentescoRefPersonal, cantonRefPersonal, procedenciaVenta, requisitosPoliticas, producto, fechaEntrega, horarioEntrega, comentariosVenta, regalia,correoElectronico,fechaLlamada);
+    public VentaGeneral VentaGene(String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia, String correoElectronico, Date fechaLlamada){
+        return ventaGeneral = new VentaGeneral(NombreCliente, Cedula, fechaVencCedula, Asesor, fechaNacimiento, estadoCivil, telMovil, telFijo, telTrabajo, provincia, canton, distrito, direccionCLiente, cantonEntrega, direccionEntrega, montoOrden, referenciaLaboral, telReferenciaLaboral, parentescoLaboral, nomRefFamiliar, telRefFamiliar, parentescoFamiliar, cantonRefFamiliar, nomRefPersonal, telRefPersonal, parentescoRefPersonal, cantonRefPersonal, procedenciaVenta, requisitosPoliticas, producto, fechaEntrega, horarioEntrega, comentariosVenta, regalia,correoElectronico,fechaLlamada);
     }
     
     public VentaDTH VentaDTH(String numeroBurro, String anticipo, String dondeFirmaInstala, String tipoProducto, double rentaPagar, String adicionales, String esquemaContratacionA, String esquemaContratacionB, String esquemaContratacionC){
@@ -210,8 +210,8 @@ public class GestorLogico {
         } 
     }
     
-    public void VVentaProducto(GestorLogico pGLPrincipal, int pPadre,String pcedula,String pnombre,String ptelefono,int pproc ,int renta,String pBase){
-        Ventana_Venta_Producto = new VVentaProducto(pGLPrincipal,pPadre);
+    public void VVentaProducto(GestorLogico pGLPrincipal, int pPadre,String pcedula,String pnombre,String ptelefono,int pproc ,int renta,String procedencia){
+        Ventana_Venta_Producto = new VVentaProducto(pGLPrincipal,pPadre,procedencia);
         Ventana_Venta_Producto.setVisible(true);
         switch (pPadre) {
             case 1:  Ventana_Login.setVisible(false);
@@ -247,8 +247,6 @@ public class GestorLogico {
             case 1:  Ventana_Login.setVisible(true);
                      break;
         }
-        
-        
     }
     
        public void Regresar_Movil(int pPadre){
@@ -257,8 +255,6 @@ public class GestorLogico {
             case 1:  Ventana_Login.setVisible(true);
                      break;
         }
-        
-        
     }
     
     public void Regresar_Venta(int pPadre){
