@@ -424,8 +424,8 @@ public class VOutBound extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel12)
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel13)
                                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -433,8 +433,8 @@ public class VOutBound extends javax.swing.JFrame {
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jButton1)
                                     .addComponent(jButton2))))
-                        .addGap(0, 32, Short.MAX_VALUE)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                        .addGap(0, 18, Short.MAX_VALUE)))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -515,11 +515,11 @@ if(jTable1.getSelectedRow()<0){
             llenar_lista_Historial ();
             
             if(jComboBox1.getSelectedItem().toString().equals("VENTA")){
-                GL_Principal.VVenta(GL_Principal, 2,ID_Contacto,Nombre_Contacto,Telefono,1,0,Nombre_Base);
+                GL_Principal.VVentaProducto(GL_Principal, 2,ID_Contacto,Nombre_Contacto,Telefono,1,0,"OutBound");
             }
             
             if(jComboBox1.getSelectedItem().toString().equals("RENOVACIÓN")){
-                GL_Principal.VVenta(GL_Principal, 2,ID_Contacto,Nombre_Contacto,Telefono,1,0,Nombre_Base);
+                GL_Principal.VVentaProducto(GL_Principal, 2,ID_Contacto,Nombre_Contacto,Telefono,1,0,"OutBound");
             }
             
         }catch(Exception ex){

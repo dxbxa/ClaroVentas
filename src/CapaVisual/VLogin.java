@@ -410,7 +410,8 @@ public class VLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        GL_Principal.VVenta(GL_Principal, 1,"","","",0,0,"");
+        //GL_Principal.VVenta(GL_Principal, 1,"","","",0,0,"");
+        GL_Principal.VVentaProducto(GL_Principal, 1,"","","",0,0,"");
     }//GEN-LAST:event_jButton4ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

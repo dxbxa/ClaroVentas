@@ -15,7 +15,7 @@ public class VentaGeneral {
 
     
     
-    public VentaGeneral(String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia, String correoElectronico,Date fechaLlamada) {
+    public VentaGeneral(String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, String montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia, String correoElectronico,Date fechaLlamada) {
         this.fechaLlamada = fechaLlamada;
         this.NombreCliente = NombreCliente;
         this.Cedula = Cedula;
@@ -70,7 +70,7 @@ public class VentaGeneral {
     String direccionCLiente;
     String cantonEntrega;
     String direccionEntrega;
-    double montoOrden;
+    String montoOrden;
     String referenciaLaboral;
     int telReferenciaLaboral;
     String parentescoLaboral;
@@ -228,11 +228,11 @@ public class VentaGeneral {
         this.direccionEntrega = direccionEntrega;
     }
 
-    public double getMontoOrden() {
+    public String getMontoOrden() {
         return montoOrden;
     }
 
-    public void setMontoOrden(double montoOrden) {
+    public void setMontoOrden(String montoOrden) {
         this.montoOrden = montoOrden;
     }
 

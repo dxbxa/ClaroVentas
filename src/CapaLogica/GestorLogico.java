@@ -46,7 +46,7 @@ public class GestorLogico {
         
     }
     
-    public VentaGeneral VentaGene(String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, double montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia, String correoElectronico, Date fechaLlamada){
+    public VentaGeneral VentaGene(String NombreCliente, int Cedula, Date fechaVencCedula, String Asesor, Date fechaNacimiento, String estadoCivil, int telMovil, int telFijo, int telTrabajo, String provincia, String canton, String distrito, String direccionCLiente, String cantonEntrega, String direccionEntrega, String montoOrden, String referenciaLaboral, int telReferenciaLaboral, String parentescoLaboral, String nomRefFamiliar, int telRefFamiliar, String parentescoFamiliar, String cantonRefFamiliar, String nomRefPersonal, int telRefPersonal, String parentescoRefPersonal, String cantonRefPersonal, String procedenciaVenta, String requisitosPoliticas, String producto, Date fechaEntrega, String horarioEntrega, String comentariosVenta, Boolean regalia, String correoElectronico, Date fechaLlamada){
         return ventaGeneral = new VentaGeneral(NombreCliente, Cedula, fechaVencCedula, Asesor, fechaNacimiento, estadoCivil, telMovil, telFijo, telTrabajo, provincia, canton, distrito, direccionCLiente, cantonEntrega, direccionEntrega, montoOrden, referenciaLaboral, telReferenciaLaboral, parentescoLaboral, nomRefFamiliar, telRefFamiliar, parentescoFamiliar, cantonRefFamiliar, nomRefPersonal, telRefPersonal, parentescoRefPersonal, cantonRefPersonal, procedenciaVenta, requisitosPoliticas, producto, fechaEntrega, horarioEntrega, comentariosVenta, regalia,correoElectronico,fechaLlamada);
     }
     
@@ -91,6 +91,12 @@ public class GestorLogico {
     public String[][] consulta_Inbound_x_cedula (String pcedula)throws Exception{
         
         return objCnx.Buscar_Inbound_x_ID(pcedula);
+        
+    }
+    
+    public String[][] consulta_Inbound_x_telefono (String ptelefono)throws Exception{
+        
+        return objCnx.Buscar_Inbound_x_TEL(ptelefono);
         
     }
     
@@ -226,7 +232,7 @@ public class GestorLogico {
     public void VVentaDTH(GestorLogico pGLPrincipal, int pPadre, VentaGeneral vg){
         Ventana_DTH = new VVentaDTH(pGLPrincipal,pPadre,vg);
         Ventana_DTH.setVisible(true);
-        switch (pPadre) {
+        switch (1) {
             case 1:  Ventana_Venta_Producto.setVisible(false);
                      break;
         }
@@ -235,7 +241,7 @@ public class GestorLogico {
     public void VVentaMovil(GestorLogico pGLPrincipal, int pPadre, VentaGeneral vg){
         Ventana_Movil = new VVentaMovil(pGLPrincipal,pPadre,vg);
         Ventana_Movil.setVisible(true);
-        switch (pPadre) {
+        switch (1) {
             case 1:  Ventana_Venta_Producto.setVisible(false);
                      break;
         }
@@ -270,6 +276,7 @@ public class GestorLogico {
         
         
     }
+    
     
     public String[][] Traer_Venta (String pAsesor)throws Exception{
         

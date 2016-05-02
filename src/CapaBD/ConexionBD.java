@@ -184,7 +184,7 @@ public class ConexionBD {
         DateFormat formatter ; 
         formatter = new SimpleDateFormat("dd/mm/yyyy");
         String query="INSERT INTO T_VENTA_NUEVA values ("
-        + "'"+formatter.format(vg.getFechaLlamada())+"',"
+        + "SUBTIME(now(),'6:00:00'),"
         + "'"+vg.getAsesor()+"',"
         + "'"+vg.getNombreCliente()+"',"
         + "'"+vg.getCedula()+"',"
@@ -346,7 +346,7 @@ public class ConexionBD {
         DateFormat formatter ; 
         formatter = new SimpleDateFormat("dd/mm/yyyy");
         String query="INSERT INTO T_VENTA_NUEVA values ("
-        + "'"+formatter.format(vg.getFechaLlamada())+"',"
+        + "SUBTIME(now(),'6:00:00'),"
         + "'"+vg.getAsesor()+"',"
         + "'"+vg.getNombreCliente()+"',"
         + "'"+vg.getCedula()+"',"
@@ -517,6 +517,68 @@ public class ConexionBD {
                + "Resultado "
                + "FROM T_Contacto_I WHERE ID_Contacto='"+pcedula+"'order by Fecha_Llamada DESC;";
 System.out.println("\n buscar x id  IN bound\n"+query);
+       String resultado[][]=null;
+
+       Class.forName ("com.mysql.jdbc.Driver");
+       Connection conn = DriverManager.getConnection("jdbc:mysql://173.194.232.184:3306/BD_Callcenter", "app_cnx01_stt", "cemmeWrev1");
+       try {
+         Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+         try {
+           ResultSet rs = stmt.executeQuery(query);
+           ResultSetMetaData rsMd = rs.getMetaData();
+
+           int columnas = rsMd.getColumnCount();
+           rs.last();
+           int filas = rs.getRow();
+           rs.beforeFirst();
+           resultado = new String[filas][columnas];
+           int j=0;
+           try{
+             while (rs.next()){
+                 resultado[j][0]=rs.getObject("ID_Contacto").toString();
+                 resultado[j][1]=rs.getObject("Fecha_Llamada").toString();
+                 resultado[j][2]=rs.getObject("ID_Usuario").toString();
+                 resultado[j][3]=rs.getObject("Telefono").toString();
+                 resultado[j][4]=rs.getObject("Nombre_Contacto").toString();
+                 resultado[j][5]=rs.getObject("Producto").toString();
+                 resultado[j][6]=rs.getObject("Detalle").toString();
+                 resultado[j][7]=rs.getObject("Renta").toString();
+                 resultado[j][8]=rs.getObject("Comentario").toString();
+                 resultado[j][9]=rs.getObject("Resultado").toString();
+                 //System.out.print(resultado[j][1]);
+                 j++;  
+             } 
+           }
+           finally {
+                  rs.close(); 
+           }
+         } 
+         finally {
+               stmt.close(); 
+         }
+       } 
+       finally {
+             conn.close(); 
+       }
+    return resultado;  
+
+    }
+    
+    public String[][] Buscar_Inbound_x_TEL(String ptelefono)throws Exception{
+        
+       String query="SELECT "
+               + "ID_Contacto,"
+               + "Fecha_Llamada,"
+               + "ID_Usuario,"
+               + "Telefono,"
+               + "Nombre_Contacto,"
+               + "Producto,"
+               + "Detalle,"
+               + "Renta,"
+               + "Comentario,"
+               + "Resultado "
+               + "FROM T_Contacto_I WHERE Telefono='"+ptelefono+"'order by Fecha_Llamada DESC;";
+System.out.println("\n buscar x tel  IN bound\n"+query);
        String resultado[][]=null;
 
        Class.forName ("com.mysql.jdbc.Driver");
